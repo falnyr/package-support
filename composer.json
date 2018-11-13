@@ -1,0 +1,31 @@
+{
+    "name": "falnyr/package-support",
+    "description": "Package support check for your app and dependencies",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jan Alfred Richter",
+            "email": "richter.jan.alfred@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.9",
+        "ext-json": "*",
+        "symfony/console": "~2.7|~3.0|~4.0",
+        "composer/ca-bundle": "^1.0"
+    },
+    "bin": ["package-support"],
+    "autoload": {
+        "psr-4": { "Falnyr\\PackageSupport\\": "src/" }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "5.0-dev"
+        }
+    },
+    "config": {
+      "platform": {
+        "php": "5.3.9"
+      }
+    }
+}

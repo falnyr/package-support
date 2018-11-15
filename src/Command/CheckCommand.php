@@ -45,8 +45,7 @@ class CheckCommand extends Command
         try {
             $result = $this->comparator->compare($input->getArgument('lockfile'), $input->getOption('format'));
         } catch (RuntimeException $e) {
-            // $output->writeln($this->getHelperSet()->get('formatter')->formatBlock($e->getMessage(), 'error', true));
-
+            $output->writeln(sprintf('<error>%s</error>', $e->getMessage()));
             return 1;
         }
 

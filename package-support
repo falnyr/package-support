@@ -15,9 +15,10 @@ if ((!$loader = includeIfExists(__DIR__.'/vendor/autoload.php')) && (!$loader = 
 }
 
 use Falnyr\PackageSupport\Command\CheckCommand;
-use Falnyr\PackageSupport\Comparator;
+use Falnyr\PackageSupport\Checker;
+use Falnyr\PackageSupport\Parser;
 use Symfony\Component\Console\Application;
 
-$console = new Application('Platform Status', Falnyr\PackageSupport\Comparator::VERSION);
-$console->add(new CheckCommand(new Comparator()));
+$console = new Application('Platform Status', Falnyr\PackageSupport\Checker::VERSION);
+$console->add(new CheckCommand(new Checker(new Parser())));
 $console->run();

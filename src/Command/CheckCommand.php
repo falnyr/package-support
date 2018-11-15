@@ -2,7 +2,7 @@
 
 namespace Falnyr\PackageSupport\Command;
 
-use Falnyr\PackageSupport\Comparator;
+use Falnyr\PackageSupport\Checker;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Exception\RuntimeException;
 use Symfony\Component\Console\Input\InputArgument;
@@ -15,13 +15,13 @@ class CheckCommand extends Command
     protected static $defaultName = 'check';
 
     /**
-     * @var Comparator
+     * @var Checker
      */
-    private $comparator;
+    private $checker;
 
-    public function __construct(Comparator $comparator)
+    public function __construct(Checker $checker)
     {
-        $this->comparator = $comparator;
+        $this->checker = $checker;
 
         parent::__construct();
     }
@@ -34,17 +34,18 @@ class CheckCommand extends Command
     {
         $this
             ->setName('check')
-            ->setDefinition([
+            ->setDefinition(array(
                 new InputArgument('lockfile', InputArgument::OPTIONAL, 'The path to the composer.lock file', 'composer.lock'),
                 new InputOption('format', '', InputOption::VALUE_REQUIRED, 'The output format', 'ansi'),
-            ]);
+            ));
     }
 
     protected function execute(InputInterface $input, OutputInterface $output)
     {
         try {
-            $result = $this->comparator->compare($input->getArgument('lockfile'), $input->getOption('format'));
+            $result = $this->checker->check($input->getArgument('lockfile'), $input->getOption('format'));
         } catch (RuntimeException $e) {
+            dump($e->getMessage());
             $output->writeln(sprintf('<error>%s</error>', $e->getMessage()));
             return 1;
         }

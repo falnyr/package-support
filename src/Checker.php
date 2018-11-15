@@ -10,6 +10,8 @@ class Checker
 {
     const VERSION = '0.0';
 
+    const DATE_FORMAT = 'd F Y';
+
     const THRESHOLD_DAYS_FIXES = 30;
     const THRESHOLD_DAYS_SECURITY = 60;
 
@@ -77,14 +79,14 @@ class Checker
                 $securitySupportDiff = $now->diff($securitySupport);
                 $bugSupportDiff = $now->diff($bugSupport);
 
-                if ($securitySupportDiff < 0) {
-                    throw new UnsupportedPackageException($packageName, sprintf("Security support for version '%s' HAS ENDED on %s!", $version, $securitySupport->format('Y-m-d'), $securitySupportDiff->days));
-                } elseif ($bugSupportDiff < 0) {
-                    throw new UnsupportedPackageException($packageName, sprintf("Bug support for version '%s' HAS ENDED on %s!", $version, $bugSupport->format('Y-m-d'), $bugSupportDiff->days));
+                if ($securitySupportDiff->invert === 1) {
+                    throw new UnsupportedPackageException($packageName, sprintf("[SECURITY] Support for version '%s' has ended on %s (%s days ago)!", $version, $securitySupport->format(self::DATE_FORMAT), $securitySupportDiff->days));
+                } elseif ($bugSupportDiff->invert === 1) {
+                    throw new UnsupportedPackageException($packageName, sprintf("[BUG] Support for version '%s' has ended on %s! (%s days ago)", $version, $bugSupport->format(self::DATE_FORMAT), $bugSupportDiff->days));
                 } elseif ($securitySupportDiff->days <= self::THRESHOLD_DAYS_SECURITY) {
-                    throw new UnsupportedPackageException($packageName, sprintf("Security support for version '%s' ends on %s (%s days)", $version, $securitySupport->format('Y-m-d'), $securitySupportDiff->days));
+                    throw new UnsupportedPackageException($packageName, sprintf("[SECURITY] Support for version '%s' ends on %s (%s days)", $version, $securitySupport->format(self::DATE_FORMAT), $securitySupportDiff->days));
                 } elseif ($bugSupportDiff->days <= self::THRESHOLD_DAYS_FIXES) {
-                    throw new UnsupportedPackageException($packageName, sprintf("Bug support for version '%s' ends on %s (%s days)", $version, $bugSupport->format('Y-m-d'), $bugSupportDiff->days));
+                    throw new UnsupportedPackageException($packageName, sprintf("[BUG] Support for version '%s' ends on %s (%s days)", $version, $bugSupport->format(self::DATE_FORMAT), $bugSupportDiff->days));
                 }
 
             } else {

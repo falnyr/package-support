@@ -13,7 +13,8 @@
         "ext-json": "*",
         "symfony/console": "~2.7|~3.0|~4.0",
         "composer/ca-bundle": "^1.0",
-        "nesbot/carbon": "^1.35"
+        "nesbot/carbon": "^1.35",
+        "eloquent/enumeration": "^5.1"
     },
     "bin": ["package-support"],
     "autoload": {

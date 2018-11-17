@@ -1,0 +1,21 @@
+{
+  "output": "package-support.phar",
+  "chmod": "0755",
+  "compactors": [
+    "Herrera\\Box\\Compactor\\Php"
+  ],
+  "extract": false,
+  "files": [
+    "LICENSE"
+  ],
+  "finder": [
+    {
+      "name": ["*.php"],
+      "exclude": ["tests"],
+      "in": ["src", "vendor"]
+    }
+  ],
+  "git-commit": "git-commit",
+  "stub": "package-support",
+  "web": false
+}

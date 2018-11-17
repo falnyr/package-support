@@ -64,6 +64,7 @@ class Checker
      * @param string $packageName
      * @param string $version
      * @throws RuntimeException
+     * @throws UnsupportedPackageException
      */
     private function isSupported($packageName, $version)
     {

@@ -3,13 +3,14 @@
 namespace Falnyr\PackageSupport\Exception;
 
 use Exception;
+use Falnyr\PackageSupport\Precision;
 
 class UnsupportedPackageException extends Exception implements PackageExceptionInterface
 {
     /** @var string */
     private $package;
 
-    /** @var integer */
+    /** @var Precision */
     private $precision;
 
     public function __construct($precision, $package, $message)
@@ -28,7 +29,7 @@ class UnsupportedPackageException extends Exception implements PackageExceptionI
     }
 
     /**
-     * @return int
+     * @return Precision
      */
     public function getPrecision()
     {

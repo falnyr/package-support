@@ -127,7 +127,7 @@ class Checker
 
         if ($securitySupportDiff->invert === 1 && $this->precision >= Precision::VULNERABLE) {
             throw new UnsupportedPackageException(
-                Precision::VULNERABLE,
+                Precision::memberByValue(Precision::VULNERABLE),
                 $packageName,
                 sprintf(
                     "Support for version '%s' has ended on %s (%s days ago)!",
@@ -138,7 +138,7 @@ class Checker
             );
         } elseif ($bugSupportDiff->invert === 1 && $this->precision >= Precision::LEGACY) {
             throw new UnsupportedPackageException(
-                Precision::LEGACY,
+                Precision::memberByValue(Precision::LEGACY),
                 $packageName,
                 sprintf(
                     "Support for version '%s' has ended on %s! (%s days ago). Security fixes available for %s days.",
@@ -150,7 +150,7 @@ class Checker
             );
         } elseif ($securitySupportDiff->days <= self::THRESHOLD_DAYS_SECURITY && $this->precision >= Precision::DEPRECATED) {
             throw new UnsupportedPackageException(
-                Precision::DEPRECATED,
+                Precision::memberByValue(Precision::DEPRECATED),
                 $packageName,
                 sprintf(
                     "Support for version '%s' ends on %s (%s days left)",
@@ -161,7 +161,7 @@ class Checker
             );
         } elseif ($bugSupportDiff->days <= self::THRESHOLD_DAYS_FIXES && $this->precision >= Precision::OUTDATED) {
             throw new UnsupportedPackageException(
-                Precision::OUTDATED,
+                Precision::memberByValue(Precision::OUTDATED),
                 $packageName,
                 sprintf(
                     "Support for version '%s' ends on %s (%s days left).",

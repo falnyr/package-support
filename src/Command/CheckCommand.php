@@ -55,23 +55,40 @@ class CheckCommand extends Command
                 $input->getOption('no-dev') ?: false
             );
         } catch (Exception $e) {
-            $output->writeln(sprintf('<bg=default;fg=red;>%s</>', $e->getMessage()));
+            $output->writeln($e->getMessage());
             return 1;
         }
 
         $errors = 0;
-
         foreach ($results as $package => $result) {
             if ($result instanceof UnsupportedPackageException) {
-                $output->writeln("$package: [{$result->getPrecision()}] {$result->getMessage()}");
+                $this->outputMessage($output, 'red', $result->getPrecision()->key(), $package, $result->getMessage());
                 ++$errors;
             } elseif ($result instanceof UnknownPackageException) {
-                $output->writeln("$package: [UNKNOWN] {$result->getMessage()}");
+                $this->outputMessage($output, 'magenta', 'UNKNOWN', $package, $result->getMessage());
             } else {
-                $output->writeln("$package: $result");
+                $this->outputMessage($output, 'green', 'SUPPORTED', $package, $result);
             }
         }
 
         return $input->getOption('silent') ? 0 : (int) $errors > 0;
+    }
+
+    /**
+     * @param OutputInterface $output
+     * @param string $color
+     * @param string $violation
+     * @param string $package
+     * @param string $message
+     */
+    private function outputMessage(OutputInterface $output, $color, $violation, $package, $message)
+    {
+        $output->writeln(sprintf(
+            '<bg=default;fg=%s;>[%s]</> <bg=default;fg=yellow;>%s</>: %s',
+            $color,
+            $violation,
+            $package,
+            $message
+        ));
     }
 }

@@ -1,0 +1,29 @@
+<?php
+
+return PhpCsFixer\Config::create()
+    ->setRules(array(
+        '@PSR2' => true,
+        '@Symfony' => true,
+        'ordered_class_elements' => true,
+        'ordered_imports' => true,
+        'no_php4_constructor' => true,
+        'array_syntax' => array('syntax' => 'long'),
+        'phpdoc_add_missing_param_annotation' => true,
+        'is_null' => true,
+        'dir_constant' => true,
+        'linebreak_after_opening_tag' => true,
+        'no_useless_else' => true,
+        'no_useless_return' => true,
+        'ereg_to_preg' => true,
+        'not_operator_with_space' => true,
+        'modernize_types_casting' => true,
+        'non_printable_character' => true,
+        'no_alias_functions' => true,
+    ))
+    ->setFinder(
+        PhpCsFixer\Finder::create()
+            ->in(array(
+                __DIR__.'/src',
+            ))
+    )
+    ->setRiskyAllowed(true);

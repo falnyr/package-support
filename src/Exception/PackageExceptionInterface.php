@@ -2,7 +2,6 @@
 
 namespace Falnyr\PackageSupport\Exception;
 
-
 interface PackageExceptionInterface
 {
     /**

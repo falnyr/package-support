@@ -16,7 +16,7 @@ class UnknownPackageException extends Exception implements PackageExceptionInter
     }
 
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     public function getPackage()
     {

@@ -21,7 +21,7 @@ class UnsupportedPackageException extends Exception implements PackageExceptionI
     }
 
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     public function getPackage()
     {

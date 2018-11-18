@@ -31,6 +31,7 @@ class CheckCommand extends Command
 
     /**
      * @see Command
+     *
      * @throws \Symfony\Component\Console\Exception\InvalidArgumentException
      */
     protected function configure()
@@ -42,7 +43,7 @@ class CheckCommand extends Command
                 new InputArgument('lockfile', InputArgument::OPTIONAL, 'The path to the composer.lock file', 'composer.lock'),
                 new InputOption('precision', 'p', InputOption::VALUE_REQUIRED, 'Sets precision for the check', Precision::OUTDATED),
                 new InputOption('silent', 's', InputOption::VALUE_NONE, 'Disable error exit codes'),
-                new InputOption('no-dev', '', InputOption::VALUE_NONE, 'Disable checking for dev dependencies')
+                new InputOption('no-dev', '', InputOption::VALUE_NONE, 'Disable checking for dev dependencies'),
             ));
     }
 
@@ -56,6 +57,7 @@ class CheckCommand extends Command
             );
         } catch (Exception $e) {
             $output->writeln($e->getMessage());
+
             return 1;
         }
 
@@ -76,10 +78,10 @@ class CheckCommand extends Command
 
     /**
      * @param OutputInterface $output
-     * @param string $color
-     * @param string $violation
-     * @param string $package
-     * @param string $message
+     * @param string          $color
+     * @param string          $violation
+     * @param string          $package
+     * @param string          $message
      */
     private function outputMessage(OutputInterface $output, $color, $violation, $package, $message)
     {

@@ -3,12 +3,10 @@
 namespace Falnyr\PackageSupport;
 
 use Carbon\Carbon;
-use Eloquent\Enumeration\Exception\UndefinedMemberException;
 use Eloquent\Enumeration\Exception\UndefinedMemberExceptionInterface;
 use Falnyr\PackageSupport\Exception\UnknownPackageException;
 use Falnyr\PackageSupport\Exception\UnsupportedPackageException;
 use InvalidArgumentException;
-use Symfony\Component\Console\Exception\RuntimeException;
 
 class Checker
 {
@@ -35,7 +33,6 @@ class Checker
         $this->parser = $parser;
         $this->supported = json_decode(file_get_contents(__DIR__.'/../packages.json'), true);
     }
-
 
     public function check($lock, $precision, $noDev)
     {
@@ -73,6 +70,7 @@ class Checker
     /**
      * @param $packageName
      * @param $version
+     *
      * @throws UnknownPackageException
      * @throws UnsupportedPackageException
      */
@@ -95,6 +93,7 @@ class Checker
 
     /**
      * @param $precision
+     *
      * @throws InvalidArgumentException
      */
     private function setPrecision($precision)
@@ -112,8 +111,9 @@ class Checker
 
     /**
      * @param string $packageName
-     * @param mixed $version
+     * @param mixed  $version
      * @param string $minor
+     *
      * @throws UnsupportedPackageException
      */
     private function checkSupportDates($packageName, $version, $minor)

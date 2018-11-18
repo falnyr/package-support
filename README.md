@@ -7,7 +7,7 @@ end of life, security support and deprecations of the current version of your pa
 Package Support is not used to detect the new versions of your dependencies.
 
 ## Requirements
-PHP needs to be a minimum version of PHP 5.3.29.
+PHP needs to be a minimum version of PHP 5.3.9.
 
 ## Installation
 

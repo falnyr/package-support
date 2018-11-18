@@ -35,7 +35,7 @@ Then make sure you have the global Composer binaries directory in your `PATH`. T
 export PATH="$PATH:$HOME/.composer/vendor/bin"
 ```
 
-### Usage
+## Usage
 
 ```
 package-support check -p 5 -s --no-dev composer.lock

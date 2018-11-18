@@ -40,10 +40,12 @@ class Checker
 
     /**
      * @param string $lock
-     * @param int $precision
-     * @param bool $noDev
-     * @param bool $showUnknown
+     * @param int    $precision
+     * @param bool   $noDev
+     * @param bool   $showUnknown
+     *
      * @return array
+     *
      * @throws InvalidArgumentException
      */
     public function check($lock, $precision, $noDev, $showUnknown)

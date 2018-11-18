@@ -38,9 +38,10 @@ export PATH="$PATH:$HOME/.composer/vendor/bin"
 ### Usage
 
 ```
-package-support check --precision 5 --silent composer.lock
+package-support check -p 5 -s --no-dev composer.lock
+```
 
-#### Available statuses
+#### Available precisions
 
 | Precision | Status       | Description                                      |
 |-----------|--------------|--------------------------------------------------|

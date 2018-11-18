@@ -2,7 +2,6 @@
 
 namespace Falnyr\PackageSupport\Command;
 
-use Exception;
 use Falnyr\PackageSupport\Checker;
 use Falnyr\PackageSupport\Exception\UnknownPackageException;
 use Falnyr\PackageSupport\Exception\UnsupportedPackageException;
@@ -50,40 +49,43 @@ class CheckCommand extends Command
     }
 
     /**
-     * @param InputInterface $input
+     * @param InputInterface  $input
      * @param OutputInterface $output
+     *
      * @return int|null
+     *
      * @throws RuntimeException
+     * @throws \InvalidArgumentException
      * @throws \Symfony\Component\Console\Exception\InvalidArgumentException
      */
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        try {
-            $results = $this->checker->check(
-                $input->getArgument('lockfile'),
-                $input->getOption('precision'),
-                $input->getOption('no-dev') ?: false,
-                $input->getOption('show-unknown') ?: false
-            );
-        } catch (Exception $e) {
-            $output->writeln($e->getMessage());
+        $errors = $this->checker->check(
+            $input->getArgument('lockfile'),
+            $input->getOption('precision'),
+            $input->getOption('no-dev') ?: false,
+            $input->getOption('show-unknown') ?: false
+        );
 
-            return 1;
-        }
-
-        $errors = 0;
-        foreach ($results as $package => $result) {
-            if ($result instanceof UnsupportedPackageException) {
-                $this->outputMessage($output, 'red', $result->getPrecision()->key(), $package, $result->getMessage());
-                ++$errors;
-            } elseif ($result instanceof UnknownPackageException) {
-                $this->outputMessage($output, 'magenta', 'UNKNOWN', $package, $result->getMessage());
-            } else {
-                throw new RuntimeException("Not implemented");
+        if ($errors) {
+            $errorCount = 0;
+            foreach ($errors as $package => $error) {
+                if ($error instanceof UnsupportedPackageException) {
+                    $this->outputMessage($output, 'red', $error->getPrecision()->key(), $package, $error->getMessage());
+                    ++$errorCount;
+                } elseif ($error instanceof UnknownPackageException) {
+                    $this->outputMessage($output, 'magenta', 'UNKNOWN', $package, $error->getMessage());
+                } else {
+                    throw new RuntimeException('Not implemented');
+                }
             }
+        } else {
+            /** @var Precision $precision */
+            $precision = Precision::memberByValue((int) $input->getOption('precision'));
+            $output->writeln("<info>All dependencies are supported. (Precision: {$precision->key()})</info>");
         }
 
-        return $input->getOption('silent') ? 0 : (int) ($errors > 0);
+        return $input->getOption('silent') ? 0 : (int) ($errorCount > 0);
     }
 
     /**

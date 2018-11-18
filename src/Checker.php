@@ -156,7 +156,7 @@ class Checker
                 Precision::memberByValue(Precision::LEGACY),
                 $packageName,
                 sprintf(
-                    "Support for version '%s' has ended on %s! (%s days ago). Security fixes available for %s days.",
+                    "Support for version '%s' has ended on %s! (%s days ago). Security fixes will be available for %s more days.",
                     $version,
                     $bugSupport->format(self::DATE_FORMAT),
                     $bugSupportDiff->days,

@@ -31,36 +31,114 @@
   },
   "laravel/framework": {
     "5.0": {
-      "support_ends":"2015-08-04",
-      "security_ends":"2016-02-04"
+      "support_ends": "2015-08-04",
+      "security_ends": "2016-02-04"
     },
     "5.1": {
-      "support_ends":"2017-06-09",
-      "security_ends":"2018-06-09"
+      "support_ends": "2017-06-09",
+      "security_ends": "2018-06-09"
     },
     "5.2": {
-      "support_ends":"2016-06-21",
-      "security_ends":"2016-12-21"
+      "support_ends": "2016-06-21",
+      "security_ends": "2016-12-21"
     },
     "5.3": {
-      "support_ends":"2017-02-23",
-      "security_ends":"2017-08-23"
+      "support_ends": "2017-02-23",
+      "security_ends": "2017-08-23"
     },
     "5.4": {
-      "support_ends":"2017-07-24",
-      "security_ends":"2018-01-24"
+      "support_ends": "2017-07-24",
+      "security_ends": "2018-01-24"
     },
     "5.5": {
-      "support_ends":"2019-08-30",
-      "security_ends":"2020-08-30"
+      "support_ends": "2019-08-30",
+      "security_ends": "2020-08-30"
     },
     "5.6": {
-      "support_ends":"2018-08-07",
-      "security_ends":"2019-02-07"
+      "support_ends": "2018-08-07",
+      "security_ends": "2019-02-07"
     },
     "5.7": {
-      "support_ends":"2019-03-04",
-      "security_ends":"2019-09-04"
+      "support_ends": "2019-03-04",
+      "security_ends": "2019-09-04"
+    }
+  },
+  "symfony/console": {
+    "2.0": {
+      "support_ends": "2013-03-01",
+      "security_ends": "2013-09-01"
+    },
+    "2.1": {
+      "support_ends": "2013-05-01",
+      "security_ends": "2013-11-01"
+    },
+    "2.2": {
+      "support_ends": "2013-11-01",
+      "security_ends": "2014-05-01"
+    },
+    "2.3": {
+      "support_ends": "2016-05-01",
+      "security_ends": "2017-05-01"
+    },
+    "2.4": {
+      "support_ends": "2014-07-01",
+      "security_ends": "2015-01-01"
+    },
+    "2.5": {
+      "support_ends": "2015-01-01",
+      "security_ends": "2015-07-01"
+    },
+    "2.6": {
+      "support_ends": "2015-07-01",
+      "security_ends": "2016-01-01"
+    },
+    "2.7": {
+      "support_ends": "2018-05-01",
+      "security_ends": "2019-05-01"
+    },
+    "2.8": {
+      "support_ends": "2018-11-01",
+      "security_ends": "2019-11-01"
+    },
+    "3.0": {
+      "support_ends": "2016-07-01",
+      "security_ends": "2017-01-01"
+    },
+    "3.1": {
+      "support_ends": "2017-01-01",
+      "security_ends": "2017-07-01"
+    },
+    "3.2": {
+      "support_ends": "2017-07-01",
+      "security_ends": "2018-01-01"
+    },
+    "3.3": {
+      "support_ends": "2018-01-01",
+      "security_ends": "2018-07-01"
+    },
+    "3.4": {
+      "support_ends": "2020-11-01",
+      "security_ends": "2021-11-01"
+    },
+    "4.0": {
+      "support_ends": "2018-07-01",
+      "security_ends": "2019-01-01"
+    },
+    "4.1": {
+      "support_ends": "2019-01-01",
+      "security_ends": "2019-07-01"
+    },
+    "4.2": {
+      "support_ends": "2019-07-01",
+      "security_ends": "2020-01-01"
+    },
+    "4.3": {
+      "support_ends": "2020-01-01",
+      "security_ends": "2020-07-01"
+    },
+    "4.4": {
+      "support_ends": "2022-11-01",
+      "security_ends": "2023-11-01"
     }
   }
 }

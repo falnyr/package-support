@@ -3,7 +3,11 @@
 namespace Falnyr\PackageSupport;
 
 use Carbon\Carbon;
+use Eloquent\Enumeration\Exception\UndefinedMemberException;
+use Eloquent\Enumeration\Exception\UndefinedMemberExceptionInterface;
+use Falnyr\PackageSupport\Exception\UnknownPackageException;
 use Falnyr\PackageSupport\Exception\UnsupportedPackageException;
+use InvalidArgumentException;
 use Symfony\Component\Console\Exception\RuntimeException;
 
 class Checker
@@ -12,8 +16,8 @@ class Checker
 
     const DATE_FORMAT = 'd F Y';
 
-    const THRESHOLD_DAYS_FIXES = 30;
-    const THRESHOLD_DAYS_SECURITY = 60;
+    const THRESHOLD_DAYS_FIXES = 60;
+    const THRESHOLD_DAYS_SECURITY = 90;
 
     /**
      * @var array
@@ -24,46 +28,52 @@ class Checker
      */
     private $parser;
 
+    private $precision = Precision::OUTDATED;
+
     public function __construct(Parser $parser)
     {
         $this->parser = $parser;
         $this->supported = json_decode(file_get_contents(__DIR__.'/../packages.json'), true);
     }
 
-    /**
-     * @param $lock
-     * @param string $format
-     * @return mixed
-     * @throws RuntimeException
-     */
-    public function check($lock, $format = 'json')
+
+    public function check($lock, $precision, $noDev)
     {
         $lockContents = $this->parser->getLockContents($lock);
-        $unsupported = array();
+        $this->setPrecision($precision);
+        $results = array();
 
         foreach ($lockContents['packages'] as $packageName => $versionDetails) {
             try {
                 $this->isSupported($packageName, $versionDetails['version']);
+                $results[$packageName] = "$packageName is up to date";
             } catch (UnsupportedPackageException $e) {
-                $unsupported[$e->getPackage()] = $e->getMessage();
+                $results[$packageName] = $e;
+            } catch (UnknownPackageException $e) {
+                $results[$packageName] = $e;
             }
         }
 
-        foreach ($lockContents['packages-dev'] as $packageName => $versionDetails) {
-            try {
-                $this->isSupported($packageName, $versionDetails['version']);
-            } catch (UnsupportedPackageException $e) {
-                $unsupported[$e->getPackage()] = $e->getMessage();
+        if ($noDev === false) {
+            foreach ($lockContents['packages-dev'] as $packageName => $versionDetails) {
+                try {
+                    $this->isSupported($packageName, $versionDetails['version']);
+                    $results[$packageName] = "$packageName is up to date";
+                } catch (UnsupportedPackageException $e) {
+                    $results[$packageName] = $e;
+                } catch (UnknownPackageException $e) {
+                    $results[$packageName] = $e;
+                }
             }
         }
 
-        dump($unsupported);
+        return $results;
     }
 
     /**
-     * @param string $packageName
-     * @param string $version
-     * @throws RuntimeException
+     * @param $packageName
+     * @param $version
+     * @throws UnknownPackageException
      * @throws UnsupportedPackageException
      */
     private function isSupported($packageName, $version)
@@ -73,26 +83,93 @@ class Checker
             $minor = $matches[1];
 
             if (array_key_exists($minor, $this->supported[$packageName])) {
-                $now = new Carbon();
-                $now->startOfDay();
-                $bugSupport = new Carbon($this->supported[$packageName][$minor]['support_ends']);
-                $securitySupport = new Carbon($this->supported[$packageName][$minor]['security_ends']);
-                $securitySupportDiff = $now->diff($securitySupport);
-                $bugSupportDiff = $now->diff($bugSupport);
-
-                if ($securitySupportDiff->invert === 1) {
-                    throw new UnsupportedPackageException($packageName, sprintf("[SECURITY] Support for version '%s' has ended on %s (%s days ago)!", $version, $securitySupport->format(self::DATE_FORMAT), $securitySupportDiff->days));
-                } elseif ($bugSupportDiff->invert === 1) {
-                    throw new UnsupportedPackageException($packageName, sprintf("[BUG] Support for version '%s' has ended on %s! (%s days ago)", $version, $bugSupport->format(self::DATE_FORMAT), $bugSupportDiff->days));
-                } elseif ($securitySupportDiff->days <= self::THRESHOLD_DAYS_SECURITY) {
-                    throw new UnsupportedPackageException($packageName, sprintf("[SECURITY] Support for version '%s' ends on %s (%s days)", $version, $securitySupport->format(self::DATE_FORMAT), $securitySupportDiff->days));
-                } elseif ($bugSupportDiff->days <= self::THRESHOLD_DAYS_FIXES) {
-                    throw new UnsupportedPackageException($packageName, sprintf("[BUG] Support for version '%s' ends on %s (%s days)", $version, $bugSupport->format(self::DATE_FORMAT), $bugSupportDiff->days));
-                }
-
+                $this->checkSupportDates($packageName, $version, $minor);
             } else {
-                throw new RuntimeException("Unknown version '$version' for '$packageName'");
+                throw new UnknownPackageException($packageName, "Unknown version '$version' for '$packageName'");
             }
+        } else {
+            // TODO: Display missing packages option
+            throw new UnknownPackageException($packageName, "Unknown package '$packageName'");
+        }
+    }
+
+    /**
+     * @param $precision
+     * @throws InvalidArgumentException
+     */
+    private function setPrecision($precision)
+    {
+        $precision = (int) $precision;
+
+        try {
+            Precision::memberByValue($precision);
+        } catch (UndefinedMemberExceptionInterface $e) {
+            throw new InvalidArgumentException("Invalid precision ({$e->getMessage()})", 0, $e);
+        }
+
+        $this->precision = $precision;
+    }
+
+    /**
+     * @param string $packageName
+     * @param mixed $version
+     * @param string $minor
+     * @throws UnsupportedPackageException
+     */
+    private function checkSupportDates($packageName, $version, $minor)
+    {
+        $now = new Carbon();
+        $now->startOfDay();
+        $bugSupport = new Carbon($this->supported[$packageName][$minor]['support_ends']);
+        $securitySupport = new Carbon($this->supported[$packageName][$minor]['security_ends']);
+        $securitySupportDiff = $now->diff($securitySupport);
+        $bugSupportDiff = $now->diff($bugSupport);
+
+        if ($securitySupportDiff->invert === 1 && $this->precision >= Precision::VULNERABLE) {
+            throw new UnsupportedPackageException(
+                Precision::VULNERABLE,
+                $packageName,
+                sprintf(
+                    "Support for version '%s' has ended on %s (%s days ago)!",
+                    $version,
+                    $securitySupport->format(self::DATE_FORMAT),
+                    $securitySupportDiff->days
+                )
+            );
+        } elseif ($bugSupportDiff->invert === 1 && $this->precision >= Precision::LEGACY) {
+            throw new UnsupportedPackageException(
+                Precision::LEGACY,
+                $packageName,
+                sprintf(
+                    "Support for version '%s' has ended on %s! (%s days ago). Security fixes available for %s days.",
+                    $version,
+                    $bugSupport->format(self::DATE_FORMAT),
+                    $bugSupportDiff->days,
+                    $securitySupportDiff->days
+                )
+            );
+        } elseif ($securitySupportDiff->days <= self::THRESHOLD_DAYS_SECURITY && $this->precision >= Precision::DEPRECATED) {
+            throw new UnsupportedPackageException(
+                Precision::DEPRECATED,
+                $packageName,
+                sprintf(
+                    "Support for version '%s' ends on %s (%s days left)",
+                    $version,
+                    $securitySupport->format(self::DATE_FORMAT),
+                    $securitySupportDiff->days
+                )
+            );
+        } elseif ($bugSupportDiff->days <= self::THRESHOLD_DAYS_FIXES && $this->precision >= Precision::OUTDATED) {
+            throw new UnsupportedPackageException(
+                Precision::OUTDATED,
+                $packageName,
+                sprintf(
+                    "Support for version '%s' ends on %s (%s days left).",
+                    $version,
+                    $bugSupport->format(self::DATE_FORMAT),
+                    $bugSupportDiff->days
+                )
+            );
         }
     }
 }

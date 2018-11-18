@@ -1,8 +1,10 @@
 # Package Support
 
 Package Support provides an automated way of checking versions of the project dependencies and displays warnings/errors
-based on its configuration. Unlike commands like `composer outdated` you can get detailed information about the 
-end of life, security support, deprecations etc.
+based on its configuration. Unlike other commands like `composer outdated` you are getting detailed information about the 
+end of life, security support and deprecations of the current version of your package dependencies.
+
+Package Support is not used to detect the new versions of your dependencies.
 
 ## Requirements
 PHP needs to be a minimum version of PHP 5.3.29.
@@ -42,13 +44,10 @@ package-support check --precision 5 --silent composer.lock
 
 | Precision | Status       | Description                                      |
 |-----------|--------------|--------------------------------------------------|
-| -         | Up to date   | No new versions available                        |
-| 8         | Outdated     | New bugfix is available                          |
-| 7         | Old          | New minor version is available                   |
-| 6         | Obsolete     | New major version is available                   |
-| 5         | Deprecated   | Official support ends in < 6 months              |
-| 4         | Unsupported  | Official support ended, security fixes available |
-| 3         | Legacy       | Security fixes end in < 6 months                 |
+| -         | Supported    | Currently used version is supported              |
+| 5         | Outdated     | Official support ends in < 2 months              |
+| 4         | Deprecated   | Official support ended, security fixes available |
+| 3         | Legacy       | Security fixes end in < 3 months                 |
 | 2         | Vulnerable   | Security support ended                           |
 | 1         | Discontinued | Project abandoned                                | 
 

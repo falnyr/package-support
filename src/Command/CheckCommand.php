@@ -7,6 +7,7 @@ use Falnyr\PackageSupport\Checker;
 use Falnyr\PackageSupport\Exception\UnknownPackageException;
 use Falnyr\PackageSupport\Exception\UnsupportedPackageException;
 use Falnyr\PackageSupport\Precision;
+use RuntimeException;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
@@ -44,16 +45,25 @@ class CheckCommand extends Command
                 new InputOption('precision', 'p', InputOption::VALUE_REQUIRED, 'Sets precision for the check', Precision::OUTDATED),
                 new InputOption('silent', 's', InputOption::VALUE_NONE, 'Disable error exit codes'),
                 new InputOption('no-dev', '', InputOption::VALUE_NONE, 'Disable checking for dev dependencies'),
+                new InputOption('show-unknown', '', InputOption::VALUE_NONE, 'Show unknown packages'),
             ));
     }
 
+    /**
+     * @param InputInterface $input
+     * @param OutputInterface $output
+     * @return int|null
+     * @throws RuntimeException
+     * @throws \Symfony\Component\Console\Exception\InvalidArgumentException
+     */
     protected function execute(InputInterface $input, OutputInterface $output)
     {
         try {
             $results = $this->checker->check(
                 $input->getArgument('lockfile'),
                 $input->getOption('precision'),
-                $input->getOption('no-dev') ?: false
+                $input->getOption('no-dev') ?: false,
+                $input->getOption('show-unknown') ?: false
             );
         } catch (Exception $e) {
             $output->writeln($e->getMessage());
@@ -69,11 +79,11 @@ class CheckCommand extends Command
             } elseif ($result instanceof UnknownPackageException) {
                 $this->outputMessage($output, 'magenta', 'UNKNOWN', $package, $result->getMessage());
             } else {
-                $this->outputMessage($output, 'green', 'SUPPORTED', $package, $result);
+                throw new RuntimeException("Not implemented");
             }
         }
 
-        return $input->getOption('silent') ? 0 : (int) $errors > 0;
+        return $input->getOption('silent') ? 0 : (int) ($errors > 0);
     }
 
     /**

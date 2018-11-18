@@ -10,10 +10,8 @@ use InvalidArgumentException;
 
 class Checker
 {
-    const VERSION = '0.0';
-
+    const VERSION = '0.1-alpha';
     const DATE_FORMAT = 'd F Y';
-
     const THRESHOLD_DAYS_FIXES = 60;
     const THRESHOLD_DAYS_SECURITY = 90;
 
@@ -26,28 +24,43 @@ class Checker
      */
     private $parser;
 
+    /**
+     * @var int
+     */
     private $precision = Precision::OUTDATED;
 
+    /**
+     * @param Parser $parser
+     */
     public function __construct(Parser $parser)
     {
         $this->parser = $parser;
         $this->supported = json_decode(file_get_contents(__DIR__.'/../packages.json'), true);
     }
 
-    public function check($lock, $precision, $noDev)
+    /**
+     * @param string $lock
+     * @param int $precision
+     * @param bool $noDev
+     * @param bool $showUnknown
+     * @return array
+     * @throws InvalidArgumentException
+     */
+    public function check($lock, $precision, $noDev, $showUnknown)
     {
         $lockContents = $this->parser->getLockContents($lock);
         $this->setPrecision($precision);
-        $results = array();
+        $errors = array();
 
         foreach ($lockContents['packages'] as $packageName => $versionDetails) {
             try {
                 $this->isSupported($packageName, $versionDetails['version']);
-                $results[$packageName] = "$packageName is up to date";
             } catch (UnsupportedPackageException $e) {
-                $results[$packageName] = $e;
+                $errors[$packageName] = $e;
             } catch (UnknownPackageException $e) {
-                $results[$packageName] = $e;
+                if ($showUnknown === true) {
+                    $errors[$packageName] = $e;
+                }
             }
         }
 
@@ -55,16 +68,17 @@ class Checker
             foreach ($lockContents['packages-dev'] as $packageName => $versionDetails) {
                 try {
                     $this->isSupported($packageName, $versionDetails['version']);
-                    $results[$packageName] = "$packageName is up to date";
                 } catch (UnsupportedPackageException $e) {
-                    $results[$packageName] = $e;
+                    $errors[$packageName] = $e;
                 } catch (UnknownPackageException $e) {
-                    $results[$packageName] = $e;
+                    if ($showUnknown === true) {
+                        $errors[$packageName] = $e;
+                    }
                 }
             }
         }
 
-        return $results;
+        return $errors;
     }
 
     /**
@@ -86,7 +100,6 @@ class Checker
                 throw new UnknownPackageException($packageName, "Unknown version '$version' for '$packageName'");
             }
         } else {
-            // TODO: Display missing packages option
             throw new UnknownPackageException($packageName, "Unknown package '$packageName'");
         }
     }

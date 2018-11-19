@@ -93,6 +93,8 @@ class Checker
     private function isSupported($packageName, $version)
     {
         if (array_key_exists($packageName, $this->supported)) {
+            $this->checkAbandoned($packageName);
+
             preg_match('/v?(\d+\.\d+)\.?\d*/', $version, $matches);
             $minor = $matches[1];
 
@@ -184,6 +186,22 @@ class Checker
                     $bugSupport->format(self::DATE_FORMAT),
                     $bugSupportDiff->days
                 )
+            );
+        }
+    }
+
+    /**
+     * @param $packageName
+     *
+     * @throws UnsupportedPackageException
+     */
+    private function checkAbandoned($packageName)
+    {
+        if (array_key_exists('abandoned', $this->supported[$packageName])) {
+            throw new UnsupportedPackageException(
+                Precision::memberByValue(Precision::DISCONTINUED),
+                $packageName,
+                'Abandoned! No new bug fixes or security fixes are available!'
             );
         }
     }

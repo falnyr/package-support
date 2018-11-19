@@ -63,82 +63,3145 @@
       "security_ends": "2019-09-04"
     }
   },
-  "symfony/console": {
+  "laravel/lumen-framework": {
+    "5.0": {
+      "support_ends": "2015-08-04",
+      "security_ends": "2016-02-04"
+    },
+    "5.1": {
+      "support_ends": "2017-06-09",
+      "security_ends": "2018-06-09"
+    },
+    "5.2": {
+      "support_ends": "2016-06-21",
+      "security_ends": "2016-12-21"
+    },
+    "5.3": {
+      "support_ends": "2017-02-23",
+      "security_ends": "2017-08-23"
+    },
+    "5.4": {
+      "support_ends": "2017-07-24",
+      "security_ends": "2018-01-24"
+    },
+    "5.5": {
+      "support_ends": "2019-08-30",
+      "security_ends": "2020-08-30"
+    },
+    "5.6": {
+      "support_ends": "2018-08-07",
+      "security_ends": "2019-02-07"
+    },
+    "5.7": {
+      "support_ends": "2019-03-04",
+      "security_ends": "2019-09-04"
+    }
+  },
+  "symfony/asset": {
     "2.0": {
-      "support_ends": "2013-03-01",
-      "security_ends": "2013-09-01"
+      "support_ends":"2013-03-01",
+      "security_ends":"2013-09-01"
     },
     "2.1": {
-      "support_ends": "2013-05-01",
-      "security_ends": "2013-11-01"
+      "support_ends":"2013-05-01",
+      "security_ends":"2013-11-01"
     },
     "2.2": {
-      "support_ends": "2013-11-01",
-      "security_ends": "2014-05-01"
+      "support_ends":"2013-11-01",
+      "security_ends":"2014-05-01"
     },
     "2.3": {
-      "support_ends": "2016-05-01",
-      "security_ends": "2017-05-01"
+      "support_ends":"2016-05-01",
+      "security_ends":"2017-05-01"
     },
     "2.4": {
-      "support_ends": "2014-07-01",
-      "security_ends": "2015-01-01"
+      "support_ends":"2014-07-01",
+      "security_ends":"2015-01-01"
     },
     "2.5": {
-      "support_ends": "2015-01-01",
-      "security_ends": "2015-07-01"
+      "support_ends":"2015-01-01",
+      "security_ends":"2015-07-01"
     },
     "2.6": {
-      "support_ends": "2015-07-01",
-      "security_ends": "2016-01-01"
+      "support_ends":"2015-07-01",
+      "security_ends":"2016-01-01"
     },
     "2.7": {
-      "support_ends": "2018-05-01",
-      "security_ends": "2019-05-01"
+      "support_ends":"2018-05-01",
+      "security_ends":"2019-05-01"
     },
     "2.8": {
-      "support_ends": "2018-11-01",
-      "security_ends": "2019-11-01"
+      "support_ends":"2018-11-01",
+      "security_ends":"2019-11-01"
     },
     "3.0": {
-      "support_ends": "2016-07-01",
-      "security_ends": "2017-01-01"
+      "support_ends":"2016-07-01",
+      "security_ends":"2017-01-01"
     },
     "3.1": {
-      "support_ends": "2017-01-01",
-      "security_ends": "2017-07-01"
+      "support_ends":"2017-01-01",
+      "security_ends":"2017-07-01"
     },
     "3.2": {
-      "support_ends": "2017-07-01",
-      "security_ends": "2018-01-01"
+      "support_ends":"2017-07-01",
+      "security_ends":"2018-01-01"
     },
     "3.3": {
-      "support_ends": "2018-01-01",
-      "security_ends": "2018-07-01"
+      "support_ends":"2018-01-01",
+      "security_ends":"2018-07-01"
     },
     "3.4": {
-      "support_ends": "2020-11-01",
-      "security_ends": "2021-11-01"
+      "support_ends":"2020-11-01",
+      "security_ends":"2021-11-01"
     },
     "4.0": {
-      "support_ends": "2018-07-01",
-      "security_ends": "2019-01-01"
+      "support_ends":"2018-07-01",
+      "security_ends":"2019-01-01"
     },
     "4.1": {
-      "support_ends": "2019-01-01",
-      "security_ends": "2019-07-01"
+      "support_ends":"2019-01-01",
+      "security_ends":"2019-07-01"
     },
     "4.2": {
-      "support_ends": "2019-07-01",
-      "security_ends": "2020-01-01"
+      "support_ends":"2019-07-01",
+      "security_ends":"2020-01-01"
     },
     "4.3": {
-      "support_ends": "2020-01-01",
-      "security_ends": "2020-07-01"
+      "support_ends":"2020-01-01",
+      "security_ends":"2020-07-01"
     },
     "4.4": {
-      "support_ends": "2022-11-01",
-      "security_ends": "2023-11-01"
+      "support_ends":"2022-11-01",
+      "security_ends":"2023-11-01"
     }
+  },
+  "symfony/browser-kit": {
+    "2.0": {
+      "support_ends":"2013-03-01",
+      "security_ends":"2013-09-01"
+    },
+    "2.1": {
+      "support_ends":"2013-05-01",
+      "security_ends":"2013-11-01"
+    },
+    "2.2": {
+      "support_ends":"2013-11-01",
+      "security_ends":"2014-05-01"
+    },
+    "2.3": {
+      "support_ends":"2016-05-01",
+      "security_ends":"2017-05-01"
+    },
+    "2.4": {
+      "support_ends":"2014-07-01",
+      "security_ends":"2015-01-01"
+    },
+    "2.5": {
+      "support_ends":"2015-01-01",
+      "security_ends":"2015-07-01"
+    },
+    "2.6": {
+      "support_ends":"2015-07-01",
+      "security_ends":"2016-01-01"
+    },
+    "2.7": {
+      "support_ends":"2018-05-01",
+      "security_ends":"2019-05-01"
+    },
+    "2.8": {
+      "support_ends":"2018-11-01",
+      "security_ends":"2019-11-01"
+    },
+    "3.0": {
+      "support_ends":"2016-07-01",
+      "security_ends":"2017-01-01"
+    },
+    "3.1": {
+      "support_ends":"2017-01-01",
+      "security_ends":"2017-07-01"
+    },
+    "3.2": {
+      "support_ends":"2017-07-01",
+      "security_ends":"2018-01-01"
+    },
+    "3.3": {
+      "support_ends":"2018-01-01",
+      "security_ends":"2018-07-01"
+    },
+    "3.4": {
+      "support_ends":"2020-11-01",
+      "security_ends":"2021-11-01"
+    },
+    "4.0": {
+      "support_ends":"2018-07-01",
+      "security_ends":"2019-01-01"
+    },
+    "4.1": {
+      "support_ends":"2019-01-01",
+      "security_ends":"2019-07-01"
+    },
+    "4.2": {
+      "support_ends":"2019-07-01",
+      "security_ends":"2020-01-01"
+    },
+    "4.3": {
+      "support_ends":"2020-01-01",
+      "security_ends":"2020-07-01"
+    },
+    "4.4": {
+      "support_ends":"2022-11-01",
+      "security_ends":"2023-11-01"
+    }
+  },
+  "symfony/cache": {
+    "2.0": {
+      "support_ends":"2013-03-01",
+      "security_ends":"2013-09-01"
+    },
+    "2.1": {
+      "support_ends":"2013-05-01",
+      "security_ends":"2013-11-01"
+    },
+    "2.2": {
+      "support_ends":"2013-11-01",
+      "security_ends":"2014-05-01"
+    },
+    "2.3": {
+      "support_ends":"2016-05-01",
+      "security_ends":"2017-05-01"
+    },
+    "2.4": {
+      "support_ends":"2014-07-01",
+      "security_ends":"2015-01-01"
+    },
+    "2.5": {
+      "support_ends":"2015-01-01",
+      "security_ends":"2015-07-01"
+    },
+    "2.6": {
+      "support_ends":"2015-07-01",
+      "security_ends":"2016-01-01"
+    },
+    "2.7": {
+      "support_ends":"2018-05-01",
+      "security_ends":"2019-05-01"
+    },
+    "2.8": {
+      "support_ends":"2018-11-01",
+      "security_ends":"2019-11-01"
+    },
+    "3.0": {
+      "support_ends":"2016-07-01",
+      "security_ends":"2017-01-01"
+    },
+    "3.1": {
+      "support_ends":"2017-01-01",
+      "security_ends":"2017-07-01"
+    },
+    "3.2": {
+      "support_ends":"2017-07-01",
+      "security_ends":"2018-01-01"
+    },
+    "3.3": {
+      "support_ends":"2018-01-01",
+      "security_ends":"2018-07-01"
+    },
+    "3.4": {
+      "support_ends":"2020-11-01",
+      "security_ends":"2021-11-01"
+    },
+    "4.0": {
+      "support_ends":"2018-07-01",
+      "security_ends":"2019-01-01"
+    },
+    "4.1": {
+      "support_ends":"2019-01-01",
+      "security_ends":"2019-07-01"
+    },
+    "4.2": {
+      "support_ends":"2019-07-01",
+      "security_ends":"2020-01-01"
+    },
+    "4.3": {
+      "support_ends":"2020-01-01",
+      "security_ends":"2020-07-01"
+    },
+    "4.4": {
+      "support_ends":"2022-11-01",
+      "security_ends":"2023-11-01"
+    }
+  },
+  "symfony/config": {
+    "2.0": {
+      "support_ends":"2013-03-01",
+      "security_ends":"2013-09-01"
+    },
+    "2.1": {
+      "support_ends":"2013-05-01",
+      "security_ends":"2013-11-01"
+    },
+    "2.2": {
+      "support_ends":"2013-11-01",
+      "security_ends":"2014-05-01"
+    },
+    "2.3": {
+      "support_ends":"2016-05-01",
+      "security_ends":"2017-05-01"
+    },
+    "2.4": {
+      "support_ends":"2014-07-01",
+      "security_ends":"2015-01-01"
+    },
+    "2.5": {
+      "support_ends":"2015-01-01",
+      "security_ends":"2015-07-01"
+    },
+    "2.6": {
+      "support_ends":"2015-07-01",
+      "security_ends":"2016-01-01"
+    },
+    "2.7": {
+      "support_ends":"2018-05-01",
+      "security_ends":"2019-05-01"
+    },
+    "2.8": {
+      "support_ends":"2018-11-01",
+      "security_ends":"2019-11-01"
+    },
+    "3.0": {
+      "support_ends":"2016-07-01",
+      "security_ends":"2017-01-01"
+    },
+    "3.1": {
+      "support_ends":"2017-01-01",
+      "security_ends":"2017-07-01"
+    },
+    "3.2": {
+      "support_ends":"2017-07-01",
+      "security_ends":"2018-01-01"
+    },
+    "3.3": {
+      "support_ends":"2018-01-01",
+      "security_ends":"2018-07-01"
+    },
+    "3.4": {
+      "support_ends":"2020-11-01",
+      "security_ends":"2021-11-01"
+    },
+    "4.0": {
+      "support_ends":"2018-07-01",
+      "security_ends":"2019-01-01"
+    },
+    "4.1": {
+      "support_ends":"2019-01-01",
+      "security_ends":"2019-07-01"
+    },
+    "4.2": {
+      "support_ends":"2019-07-01",
+      "security_ends":"2020-01-01"
+    },
+    "4.3": {
+      "support_ends":"2020-01-01",
+      "security_ends":"2020-07-01"
+    },
+    "4.4": {
+      "support_ends":"2022-11-01",
+      "security_ends":"2023-11-01"
+    }
+  },
+  "symfony/console": {
+    "2.0": {
+      "support_ends":"2013-03-01",
+      "security_ends":"2013-09-01"
+    },
+    "2.1": {
+      "support_ends":"2013-05-01",
+      "security_ends":"2013-11-01"
+    },
+    "2.2": {
+      "support_ends":"2013-11-01",
+      "security_ends":"2014-05-01"
+    },
+    "2.3": {
+      "support_ends":"2016-05-01",
+      "security_ends":"2017-05-01"
+    },
+    "2.4": {
+      "support_ends":"2014-07-01",
+      "security_ends":"2015-01-01"
+    },
+    "2.5": {
+      "support_ends":"2015-01-01",
+      "security_ends":"2015-07-01"
+    },
+    "2.6": {
+      "support_ends":"2015-07-01",
+      "security_ends":"2016-01-01"
+    },
+    "2.7": {
+      "support_ends":"2018-05-01",
+      "security_ends":"2019-05-01"
+    },
+    "2.8": {
+      "support_ends":"2018-11-01",
+      "security_ends":"2019-11-01"
+    },
+    "3.0": {
+      "support_ends":"2016-07-01",
+      "security_ends":"2017-01-01"
+    },
+    "3.1": {
+      "support_ends":"2017-01-01",
+      "security_ends":"2017-07-01"
+    },
+    "3.2": {
+      "support_ends":"2017-07-01",
+      "security_ends":"2018-01-01"
+    },
+    "3.3": {
+      "support_ends":"2018-01-01",
+      "security_ends":"2018-07-01"
+    },
+    "3.4": {
+      "support_ends":"2020-11-01",
+      "security_ends":"2021-11-01"
+    },
+    "4.0": {
+      "support_ends":"2018-07-01",
+      "security_ends":"2019-01-01"
+    },
+    "4.1": {
+      "support_ends":"2019-01-01",
+      "security_ends":"2019-07-01"
+    },
+    "4.2": {
+      "support_ends":"2019-07-01",
+      "security_ends":"2020-01-01"
+    },
+    "4.3": {
+      "support_ends":"2020-01-01",
+      "security_ends":"2020-07-01"
+    },
+    "4.4": {
+      "support_ends":"2022-11-01",
+      "security_ends":"2023-11-01"
+    }
+  },
+  "symfony/css-selector": {
+    "2.0": {
+      "support_ends":"2013-03-01",
+      "security_ends":"2013-09-01"
+    },
+    "2.1": {
+      "support_ends":"2013-05-01",
+      "security_ends":"2013-11-01"
+    },
+    "2.2": {
+      "support_ends":"2013-11-01",
+      "security_ends":"2014-05-01"
+    },
+    "2.3": {
+      "support_ends":"2016-05-01",
+      "security_ends":"2017-05-01"
+    },
+    "2.4": {
+      "support_ends":"2014-07-01",
+      "security_ends":"2015-01-01"
+    },
+    "2.5": {
+      "support_ends":"2015-01-01",
+      "security_ends":"2015-07-01"
+    },
+    "2.6": {
+      "support_ends":"2015-07-01",
+      "security_ends":"2016-01-01"
+    },
+    "2.7": {
+      "support_ends":"2018-05-01",
+      "security_ends":"2019-05-01"
+    },
+    "2.8": {
+      "support_ends":"2018-11-01",
+      "security_ends":"2019-11-01"
+    },
+    "3.0": {
+      "support_ends":"2016-07-01",
+      "security_ends":"2017-01-01"
+    },
+    "3.1": {
+      "support_ends":"2017-01-01",
+      "security_ends":"2017-07-01"
+    },
+    "3.2": {
+      "support_ends":"2017-07-01",
+      "security_ends":"2018-01-01"
+    },
+    "3.3": {
+      "support_ends":"2018-01-01",
+      "security_ends":"2018-07-01"
+    },
+    "3.4": {
+      "support_ends":"2020-11-01",
+      "security_ends":"2021-11-01"
+    },
+    "4.0": {
+      "support_ends":"2018-07-01",
+      "security_ends":"2019-01-01"
+    },
+    "4.1": {
+      "support_ends":"2019-01-01",
+      "security_ends":"2019-07-01"
+    },
+    "4.2": {
+      "support_ends":"2019-07-01",
+      "security_ends":"2020-01-01"
+    },
+    "4.3": {
+      "support_ends":"2020-01-01",
+      "security_ends":"2020-07-01"
+    },
+    "4.4": {
+      "support_ends":"2022-11-01",
+      "security_ends":"2023-11-01"
+    }
+  },
+  "symfony/debug": {
+    "2.0": {
+      "support_ends":"2013-03-01",
+      "security_ends":"2013-09-01"
+    },
+    "2.1": {
+      "support_ends":"2013-05-01",
+      "security_ends":"2013-11-01"
+    },
+    "2.2": {
+      "support_ends":"2013-11-01",
+      "security_ends":"2014-05-01"
+    },
+    "2.3": {
+      "support_ends":"2016-05-01",
+      "security_ends":"2017-05-01"
+    },
+    "2.4": {
+      "support_ends":"2014-07-01",
+      "security_ends":"2015-01-01"
+    },
+    "2.5": {
+      "support_ends":"2015-01-01",
+      "security_ends":"2015-07-01"
+    },
+    "2.6": {
+      "support_ends":"2015-07-01",
+      "security_ends":"2016-01-01"
+    },
+    "2.7": {
+      "support_ends":"2018-05-01",
+      "security_ends":"2019-05-01"
+    },
+    "2.8": {
+      "support_ends":"2018-11-01",
+      "security_ends":"2019-11-01"
+    },
+    "3.0": {
+      "support_ends":"2016-07-01",
+      "security_ends":"2017-01-01"
+    },
+    "3.1": {
+      "support_ends":"2017-01-01",
+      "security_ends":"2017-07-01"
+    },
+    "3.2": {
+      "support_ends":"2017-07-01",
+      "security_ends":"2018-01-01"
+    },
+    "3.3": {
+      "support_ends":"2018-01-01",
+      "security_ends":"2018-07-01"
+    },
+    "3.4": {
+      "support_ends":"2020-11-01",
+      "security_ends":"2021-11-01"
+    },
+    "4.0": {
+      "support_ends":"2018-07-01",
+      "security_ends":"2019-01-01"
+    },
+    "4.1": {
+      "support_ends":"2019-01-01",
+      "security_ends":"2019-07-01"
+    },
+    "4.2": {
+      "support_ends":"2019-07-01",
+      "security_ends":"2020-01-01"
+    },
+    "4.3": {
+      "support_ends":"2020-01-01",
+      "security_ends":"2020-07-01"
+    },
+    "4.4": {
+      "support_ends":"2022-11-01",
+      "security_ends":"2023-11-01"
+    }
+  },
+  "symfony/dependency-injection": {
+    "2.0": {
+      "support_ends":"2013-03-01",
+      "security_ends":"2013-09-01"
+    },
+    "2.1": {
+      "support_ends":"2013-05-01",
+      "security_ends":"2013-11-01"
+    },
+    "2.2": {
+      "support_ends":"2013-11-01",
+      "security_ends":"2014-05-01"
+    },
+    "2.3": {
+      "support_ends":"2016-05-01",
+      "security_ends":"2017-05-01"
+    },
+    "2.4": {
+      "support_ends":"2014-07-01",
+      "security_ends":"2015-01-01"
+    },
+    "2.5": {
+      "support_ends":"2015-01-01",
+      "security_ends":"2015-07-01"
+    },
+    "2.6": {
+      "support_ends":"2015-07-01",
+      "security_ends":"2016-01-01"
+    },
+    "2.7": {
+      "support_ends":"2018-05-01",
+      "security_ends":"2019-05-01"
+    },
+    "2.8": {
+      "support_ends":"2018-11-01",
+      "security_ends":"2019-11-01"
+    },
+    "3.0": {
+      "support_ends":"2016-07-01",
+      "security_ends":"2017-01-01"
+    },
+    "3.1": {
+      "support_ends":"2017-01-01",
+      "security_ends":"2017-07-01"
+    },
+    "3.2": {
+      "support_ends":"2017-07-01",
+      "security_ends":"2018-01-01"
+    },
+    "3.3": {
+      "support_ends":"2018-01-01",
+      "security_ends":"2018-07-01"
+    },
+    "3.4": {
+      "support_ends":"2020-11-01",
+      "security_ends":"2021-11-01"
+    },
+    "4.0": {
+      "support_ends":"2018-07-01",
+      "security_ends":"2019-01-01"
+    },
+    "4.1": {
+      "support_ends":"2019-01-01",
+      "security_ends":"2019-07-01"
+    },
+    "4.2": {
+      "support_ends":"2019-07-01",
+      "security_ends":"2020-01-01"
+    },
+    "4.3": {
+      "support_ends":"2020-01-01",
+      "security_ends":"2020-07-01"
+    },
+    "4.4": {
+      "support_ends":"2022-11-01",
+      "security_ends":"2023-11-01"
+    }
+  },
+  "symfony/dom-crawler": {
+    "2.0": {
+      "support_ends":"2013-03-01",
+      "security_ends":"2013-09-01"
+    },
+    "2.1": {
+      "support_ends":"2013-05-01",
+      "security_ends":"2013-11-01"
+    },
+    "2.2": {
+      "support_ends":"2013-11-01",
+      "security_ends":"2014-05-01"
+    },
+    "2.3": {
+      "support_ends":"2016-05-01",
+      "security_ends":"2017-05-01"
+    },
+    "2.4": {
+      "support_ends":"2014-07-01",
+      "security_ends":"2015-01-01"
+    },
+    "2.5": {
+      "support_ends":"2015-01-01",
+      "security_ends":"2015-07-01"
+    },
+    "2.6": {
+      "support_ends":"2015-07-01",
+      "security_ends":"2016-01-01"
+    },
+    "2.7": {
+      "support_ends":"2018-05-01",
+      "security_ends":"2019-05-01"
+    },
+    "2.8": {
+      "support_ends":"2018-11-01",
+      "security_ends":"2019-11-01"
+    },
+    "3.0": {
+      "support_ends":"2016-07-01",
+      "security_ends":"2017-01-01"
+    },
+    "3.1": {
+      "support_ends":"2017-01-01",
+      "security_ends":"2017-07-01"
+    },
+    "3.2": {
+      "support_ends":"2017-07-01",
+      "security_ends":"2018-01-01"
+    },
+    "3.3": {
+      "support_ends":"2018-01-01",
+      "security_ends":"2018-07-01"
+    },
+    "3.4": {
+      "support_ends":"2020-11-01",
+      "security_ends":"2021-11-01"
+    },
+    "4.0": {
+      "support_ends":"2018-07-01",
+      "security_ends":"2019-01-01"
+    },
+    "4.1": {
+      "support_ends":"2019-01-01",
+      "security_ends":"2019-07-01"
+    },
+    "4.2": {
+      "support_ends":"2019-07-01",
+      "security_ends":"2020-01-01"
+    },
+    "4.3": {
+      "support_ends":"2020-01-01",
+      "security_ends":"2020-07-01"
+    },
+    "4.4": {
+      "support_ends":"2022-11-01",
+      "security_ends":"2023-11-01"
+    }
+  },
+  "symfony/dotenv": {
+    "2.0": {
+      "support_ends":"2013-03-01",
+      "security_ends":"2013-09-01"
+    },
+    "2.1": {
+      "support_ends":"2013-05-01",
+      "security_ends":"2013-11-01"
+    },
+    "2.2": {
+      "support_ends":"2013-11-01",
+      "security_ends":"2014-05-01"
+    },
+    "2.3": {
+      "support_ends":"2016-05-01",
+      "security_ends":"2017-05-01"
+    },
+    "2.4": {
+      "support_ends":"2014-07-01",
+      "security_ends":"2015-01-01"
+    },
+    "2.5": {
+      "support_ends":"2015-01-01",
+      "security_ends":"2015-07-01"
+    },
+    "2.6": {
+      "support_ends":"2015-07-01",
+      "security_ends":"2016-01-01"
+    },
+    "2.7": {
+      "support_ends":"2018-05-01",
+      "security_ends":"2019-05-01"
+    },
+    "2.8": {
+      "support_ends":"2018-11-01",
+      "security_ends":"2019-11-01"
+    },
+    "3.0": {
+      "support_ends":"2016-07-01",
+      "security_ends":"2017-01-01"
+    },
+    "3.1": {
+      "support_ends":"2017-01-01",
+      "security_ends":"2017-07-01"
+    },
+    "3.2": {
+      "support_ends":"2017-07-01",
+      "security_ends":"2018-01-01"
+    },
+    "3.3": {
+      "support_ends":"2018-01-01",
+      "security_ends":"2018-07-01"
+    },
+    "3.4": {
+      "support_ends":"2020-11-01",
+      "security_ends":"2021-11-01"
+    },
+    "4.0": {
+      "support_ends":"2018-07-01",
+      "security_ends":"2019-01-01"
+    },
+    "4.1": {
+      "support_ends":"2019-01-01",
+      "security_ends":"2019-07-01"
+    },
+    "4.2": {
+      "support_ends":"2019-07-01",
+      "security_ends":"2020-01-01"
+    },
+    "4.3": {
+      "support_ends":"2020-01-01",
+      "security_ends":"2020-07-01"
+    },
+    "4.4": {
+      "support_ends":"2022-11-01",
+      "security_ends":"2023-11-01"
+    }
+  },
+  "symfony/event-dispatcher": {
+    "2.0": {
+      "support_ends":"2013-03-01",
+      "security_ends":"2013-09-01"
+    },
+    "2.1": {
+      "support_ends":"2013-05-01",
+      "security_ends":"2013-11-01"
+    },
+    "2.2": {
+      "support_ends":"2013-11-01",
+      "security_ends":"2014-05-01"
+    },
+    "2.3": {
+      "support_ends":"2016-05-01",
+      "security_ends":"2017-05-01"
+    },
+    "2.4": {
+      "support_ends":"2014-07-01",
+      "security_ends":"2015-01-01"
+    },
+    "2.5": {
+      "support_ends":"2015-01-01",
+      "security_ends":"2015-07-01"
+    },
+    "2.6": {
+      "support_ends":"2015-07-01",
+      "security_ends":"2016-01-01"
+    },
+    "2.7": {
+      "support_ends":"2018-05-01",
+      "security_ends":"2019-05-01"
+    },
+    "2.8": {
+      "support_ends":"2018-11-01",
+      "security_ends":"2019-11-01"
+    },
+    "3.0": {
+      "support_ends":"2016-07-01",
+      "security_ends":"2017-01-01"
+    },
+    "3.1": {
+      "support_ends":"2017-01-01",
+      "security_ends":"2017-07-01"
+    },
+    "3.2": {
+      "support_ends":"2017-07-01",
+      "security_ends":"2018-01-01"
+    },
+    "3.3": {
+      "support_ends":"2018-01-01",
+      "security_ends":"2018-07-01"
+    },
+    "3.4": {
+      "support_ends":"2020-11-01",
+      "security_ends":"2021-11-01"
+    },
+    "4.0": {
+      "support_ends":"2018-07-01",
+      "security_ends":"2019-01-01"
+    },
+    "4.1": {
+      "support_ends":"2019-01-01",
+      "security_ends":"2019-07-01"
+    },
+    "4.2": {
+      "support_ends":"2019-07-01",
+      "security_ends":"2020-01-01"
+    },
+    "4.3": {
+      "support_ends":"2020-01-01",
+      "security_ends":"2020-07-01"
+    },
+    "4.4": {
+      "support_ends":"2022-11-01",
+      "security_ends":"2023-11-01"
+    }
+  },
+  "symfony/expression-language": {
+    "2.0": {
+      "support_ends":"2013-03-01",
+      "security_ends":"2013-09-01"
+    },
+    "2.1": {
+      "support_ends":"2013-05-01",
+      "security_ends":"2013-11-01"
+    },
+    "2.2": {
+      "support_ends":"2013-11-01",
+      "security_ends":"2014-05-01"
+    },
+    "2.3": {
+      "support_ends":"2016-05-01",
+      "security_ends":"2017-05-01"
+    },
+    "2.4": {
+      "support_ends":"2014-07-01",
+      "security_ends":"2015-01-01"
+    },
+    "2.5": {
+      "support_ends":"2015-01-01",
+      "security_ends":"2015-07-01"
+    },
+    "2.6": {
+      "support_ends":"2015-07-01",
+      "security_ends":"2016-01-01"
+    },
+    "2.7": {
+      "support_ends":"2018-05-01",
+      "security_ends":"2019-05-01"
+    },
+    "2.8": {
+      "support_ends":"2018-11-01",
+      "security_ends":"2019-11-01"
+    },
+    "3.0": {
+      "support_ends":"2016-07-01",
+      "security_ends":"2017-01-01"
+    },
+    "3.1": {
+      "support_ends":"2017-01-01",
+      "security_ends":"2017-07-01"
+    },
+    "3.2": {
+      "support_ends":"2017-07-01",
+      "security_ends":"2018-01-01"
+    },
+    "3.3": {
+      "support_ends":"2018-01-01",
+      "security_ends":"2018-07-01"
+    },
+    "3.4": {
+      "support_ends":"2020-11-01",
+      "security_ends":"2021-11-01"
+    },
+    "4.0": {
+      "support_ends":"2018-07-01",
+      "security_ends":"2019-01-01"
+    },
+    "4.1": {
+      "support_ends":"2019-01-01",
+      "security_ends":"2019-07-01"
+    },
+    "4.2": {
+      "support_ends":"2019-07-01",
+      "security_ends":"2020-01-01"
+    },
+    "4.3": {
+      "support_ends":"2020-01-01",
+      "security_ends":"2020-07-01"
+    },
+    "4.4": {
+      "support_ends":"2022-11-01",
+      "security_ends":"2023-11-01"
+    }
+  },
+  "symfony/filesystem": {
+    "2.0": {
+      "support_ends":"2013-03-01",
+      "security_ends":"2013-09-01"
+    },
+    "2.1": {
+      "support_ends":"2013-05-01",
+      "security_ends":"2013-11-01"
+    },
+    "2.2": {
+      "support_ends":"2013-11-01",
+      "security_ends":"2014-05-01"
+    },
+    "2.3": {
+      "support_ends":"2016-05-01",
+      "security_ends":"2017-05-01"
+    },
+    "2.4": {
+      "support_ends":"2014-07-01",
+      "security_ends":"2015-01-01"
+    },
+    "2.5": {
+      "support_ends":"2015-01-01",
+      "security_ends":"2015-07-01"
+    },
+    "2.6": {
+      "support_ends":"2015-07-01",
+      "security_ends":"2016-01-01"
+    },
+    "2.7": {
+      "support_ends":"2018-05-01",
+      "security_ends":"2019-05-01"
+    },
+    "2.8": {
+      "support_ends":"2018-11-01",
+      "security_ends":"2019-11-01"
+    },
+    "3.0": {
+      "support_ends":"2016-07-01",
+      "security_ends":"2017-01-01"
+    },
+    "3.1": {
+      "support_ends":"2017-01-01",
+      "security_ends":"2017-07-01"
+    },
+    "3.2": {
+      "support_ends":"2017-07-01",
+      "security_ends":"2018-01-01"
+    },
+    "3.3": {
+      "support_ends":"2018-01-01",
+      "security_ends":"2018-07-01"
+    },
+    "3.4": {
+      "support_ends":"2020-11-01",
+      "security_ends":"2021-11-01"
+    },
+    "4.0": {
+      "support_ends":"2018-07-01",
+      "security_ends":"2019-01-01"
+    },
+    "4.1": {
+      "support_ends":"2019-01-01",
+      "security_ends":"2019-07-01"
+    },
+    "4.2": {
+      "support_ends":"2019-07-01",
+      "security_ends":"2020-01-01"
+    },
+    "4.3": {
+      "support_ends":"2020-01-01",
+      "security_ends":"2020-07-01"
+    },
+    "4.4": {
+      "support_ends":"2022-11-01",
+      "security_ends":"2023-11-01"
+    }
+  },
+  "symfony/finder": {
+    "2.0": {
+      "support_ends":"2013-03-01",
+      "security_ends":"2013-09-01"
+    },
+    "2.1": {
+      "support_ends":"2013-05-01",
+      "security_ends":"2013-11-01"
+    },
+    "2.2": {
+      "support_ends":"2013-11-01",
+      "security_ends":"2014-05-01"
+    },
+    "2.3": {
+      "support_ends":"2016-05-01",
+      "security_ends":"2017-05-01"
+    },
+    "2.4": {
+      "support_ends":"2014-07-01",
+      "security_ends":"2015-01-01"
+    },
+    "2.5": {
+      "support_ends":"2015-01-01",
+      "security_ends":"2015-07-01"
+    },
+    "2.6": {
+      "support_ends":"2015-07-01",
+      "security_ends":"2016-01-01"
+    },
+    "2.7": {
+      "support_ends":"2018-05-01",
+      "security_ends":"2019-05-01"
+    },
+    "2.8": {
+      "support_ends":"2018-11-01",
+      "security_ends":"2019-11-01"
+    },
+    "3.0": {
+      "support_ends":"2016-07-01",
+      "security_ends":"2017-01-01"
+    },
+    "3.1": {
+      "support_ends":"2017-01-01",
+      "security_ends":"2017-07-01"
+    },
+    "3.2": {
+      "support_ends":"2017-07-01",
+      "security_ends":"2018-01-01"
+    },
+    "3.3": {
+      "support_ends":"2018-01-01",
+      "security_ends":"2018-07-01"
+    },
+    "3.4": {
+      "support_ends":"2020-11-01",
+      "security_ends":"2021-11-01"
+    },
+    "4.0": {
+      "support_ends":"2018-07-01",
+      "security_ends":"2019-01-01"
+    },
+    "4.1": {
+      "support_ends":"2019-01-01",
+      "security_ends":"2019-07-01"
+    },
+    "4.2": {
+      "support_ends":"2019-07-01",
+      "security_ends":"2020-01-01"
+    },
+    "4.3": {
+      "support_ends":"2020-01-01",
+      "security_ends":"2020-07-01"
+    },
+    "4.4": {
+      "support_ends":"2022-11-01",
+      "security_ends":"2023-11-01"
+    }
+  },
+  "symfony/form": {
+    "2.0": {
+      "support_ends":"2013-03-01",
+      "security_ends":"2013-09-01"
+    },
+    "2.1": {
+      "support_ends":"2013-05-01",
+      "security_ends":"2013-11-01"
+    },
+    "2.2": {
+      "support_ends":"2013-11-01",
+      "security_ends":"2014-05-01"
+    },
+    "2.3": {
+      "support_ends":"2016-05-01",
+      "security_ends":"2017-05-01"
+    },
+    "2.4": {
+      "support_ends":"2014-07-01",
+      "security_ends":"2015-01-01"
+    },
+    "2.5": {
+      "support_ends":"2015-01-01",
+      "security_ends":"2015-07-01"
+    },
+    "2.6": {
+      "support_ends":"2015-07-01",
+      "security_ends":"2016-01-01"
+    },
+    "2.7": {
+      "support_ends":"2018-05-01",
+      "security_ends":"2019-05-01"
+    },
+    "2.8": {
+      "support_ends":"2018-11-01",
+      "security_ends":"2019-11-01"
+    },
+    "3.0": {
+      "support_ends":"2016-07-01",
+      "security_ends":"2017-01-01"
+    },
+    "3.1": {
+      "support_ends":"2017-01-01",
+      "security_ends":"2017-07-01"
+    },
+    "3.2": {
+      "support_ends":"2017-07-01",
+      "security_ends":"2018-01-01"
+    },
+    "3.3": {
+      "support_ends":"2018-01-01",
+      "security_ends":"2018-07-01"
+    },
+    "3.4": {
+      "support_ends":"2020-11-01",
+      "security_ends":"2021-11-01"
+    },
+    "4.0": {
+      "support_ends":"2018-07-01",
+      "security_ends":"2019-01-01"
+    },
+    "4.1": {
+      "support_ends":"2019-01-01",
+      "security_ends":"2019-07-01"
+    },
+    "4.2": {
+      "support_ends":"2019-07-01",
+      "security_ends":"2020-01-01"
+    },
+    "4.3": {
+      "support_ends":"2020-01-01",
+      "security_ends":"2020-07-01"
+    },
+    "4.4": {
+      "support_ends":"2022-11-01",
+      "security_ends":"2023-11-01"
+    }
+  },
+  "symfony/http-foundation": {
+    "2.0": {
+      "support_ends":"2013-03-01",
+      "security_ends":"2013-09-01"
+    },
+    "2.1": {
+      "support_ends":"2013-05-01",
+      "security_ends":"2013-11-01"
+    },
+    "2.2": {
+      "support_ends":"2013-11-01",
+      "security_ends":"2014-05-01"
+    },
+    "2.3": {
+      "support_ends":"2016-05-01",
+      "security_ends":"2017-05-01"
+    },
+    "2.4": {
+      "support_ends":"2014-07-01",
+      "security_ends":"2015-01-01"
+    },
+    "2.5": {
+      "support_ends":"2015-01-01",
+      "security_ends":"2015-07-01"
+    },
+    "2.6": {
+      "support_ends":"2015-07-01",
+      "security_ends":"2016-01-01"
+    },
+    "2.7": {
+      "support_ends":"2018-05-01",
+      "security_ends":"2019-05-01"
+    },
+    "2.8": {
+      "support_ends":"2018-11-01",
+      "security_ends":"2019-11-01"
+    },
+    "3.0": {
+      "support_ends":"2016-07-01",
+      "security_ends":"2017-01-01"
+    },
+    "3.1": {
+      "support_ends":"2017-01-01",
+      "security_ends":"2017-07-01"
+    },
+    "3.2": {
+      "support_ends":"2017-07-01",
+      "security_ends":"2018-01-01"
+    },
+    "3.3": {
+      "support_ends":"2018-01-01",
+      "security_ends":"2018-07-01"
+    },
+    "3.4": {
+      "support_ends":"2020-11-01",
+      "security_ends":"2021-11-01"
+    },
+    "4.0": {
+      "support_ends":"2018-07-01",
+      "security_ends":"2019-01-01"
+    },
+    "4.1": {
+      "support_ends":"2019-01-01",
+      "security_ends":"2019-07-01"
+    },
+    "4.2": {
+      "support_ends":"2019-07-01",
+      "security_ends":"2020-01-01"
+    },
+    "4.3": {
+      "support_ends":"2020-01-01",
+      "security_ends":"2020-07-01"
+    },
+    "4.4": {
+      "support_ends":"2022-11-01",
+      "security_ends":"2023-11-01"
+    }
+  },
+  "symfony/http-kernel": {
+    "2.0": {
+      "support_ends":"2013-03-01",
+      "security_ends":"2013-09-01"
+    },
+    "2.1": {
+      "support_ends":"2013-05-01",
+      "security_ends":"2013-11-01"
+    },
+    "2.2": {
+      "support_ends":"2013-11-01",
+      "security_ends":"2014-05-01"
+    },
+    "2.3": {
+      "support_ends":"2016-05-01",
+      "security_ends":"2017-05-01"
+    },
+    "2.4": {
+      "support_ends":"2014-07-01",
+      "security_ends":"2015-01-01"
+    },
+    "2.5": {
+      "support_ends":"2015-01-01",
+      "security_ends":"2015-07-01"
+    },
+    "2.6": {
+      "support_ends":"2015-07-01",
+      "security_ends":"2016-01-01"
+    },
+    "2.7": {
+      "support_ends":"2018-05-01",
+      "security_ends":"2019-05-01"
+    },
+    "2.8": {
+      "support_ends":"2018-11-01",
+      "security_ends":"2019-11-01"
+    },
+    "3.0": {
+      "support_ends":"2016-07-01",
+      "security_ends":"2017-01-01"
+    },
+    "3.1": {
+      "support_ends":"2017-01-01",
+      "security_ends":"2017-07-01"
+    },
+    "3.2": {
+      "support_ends":"2017-07-01",
+      "security_ends":"2018-01-01"
+    },
+    "3.3": {
+      "support_ends":"2018-01-01",
+      "security_ends":"2018-07-01"
+    },
+    "3.4": {
+      "support_ends":"2020-11-01",
+      "security_ends":"2021-11-01"
+    },
+    "4.0": {
+      "support_ends":"2018-07-01",
+      "security_ends":"2019-01-01"
+    },
+    "4.1": {
+      "support_ends":"2019-01-01",
+      "security_ends":"2019-07-01"
+    },
+    "4.2": {
+      "support_ends":"2019-07-01",
+      "security_ends":"2020-01-01"
+    },
+    "4.3": {
+      "support_ends":"2020-01-01",
+      "security_ends":"2020-07-01"
+    },
+    "4.4": {
+      "support_ends":"2022-11-01",
+      "security_ends":"2023-11-01"
+    }
+  },
+  "symfony/inflector": {
+    "2.0": {
+      "support_ends":"2013-03-01",
+      "security_ends":"2013-09-01"
+    },
+    "2.1": {
+      "support_ends":"2013-05-01",
+      "security_ends":"2013-11-01"
+    },
+    "2.2": {
+      "support_ends":"2013-11-01",
+      "security_ends":"2014-05-01"
+    },
+    "2.3": {
+      "support_ends":"2016-05-01",
+      "security_ends":"2017-05-01"
+    },
+    "2.4": {
+      "support_ends":"2014-07-01",
+      "security_ends":"2015-01-01"
+    },
+    "2.5": {
+      "support_ends":"2015-01-01",
+      "security_ends":"2015-07-01"
+    },
+    "2.6": {
+      "support_ends":"2015-07-01",
+      "security_ends":"2016-01-01"
+    },
+    "2.7": {
+      "support_ends":"2018-05-01",
+      "security_ends":"2019-05-01"
+    },
+    "2.8": {
+      "support_ends":"2018-11-01",
+      "security_ends":"2019-11-01"
+    },
+    "3.0": {
+      "support_ends":"2016-07-01",
+      "security_ends":"2017-01-01"
+    },
+    "3.1": {
+      "support_ends":"2017-01-01",
+      "security_ends":"2017-07-01"
+    },
+    "3.2": {
+      "support_ends":"2017-07-01",
+      "security_ends":"2018-01-01"
+    },
+    "3.3": {
+      "support_ends":"2018-01-01",
+      "security_ends":"2018-07-01"
+    },
+    "3.4": {
+      "support_ends":"2020-11-01",
+      "security_ends":"2021-11-01"
+    },
+    "4.0": {
+      "support_ends":"2018-07-01",
+      "security_ends":"2019-01-01"
+    },
+    "4.1": {
+      "support_ends":"2019-01-01",
+      "security_ends":"2019-07-01"
+    },
+    "4.2": {
+      "support_ends":"2019-07-01",
+      "security_ends":"2020-01-01"
+    },
+    "4.3": {
+      "support_ends":"2020-01-01",
+      "security_ends":"2020-07-01"
+    },
+    "4.4": {
+      "support_ends":"2022-11-01",
+      "security_ends":"2023-11-01"
+    }
+  },
+  "symfony/intl": {
+    "2.0": {
+      "support_ends":"2013-03-01",
+      "security_ends":"2013-09-01"
+    },
+    "2.1": {
+      "support_ends":"2013-05-01",
+      "security_ends":"2013-11-01"
+    },
+    "2.2": {
+      "support_ends":"2013-11-01",
+      "security_ends":"2014-05-01"
+    },
+    "2.3": {
+      "support_ends":"2016-05-01",
+      "security_ends":"2017-05-01"
+    },
+    "2.4": {
+      "support_ends":"2014-07-01",
+      "security_ends":"2015-01-01"
+    },
+    "2.5": {
+      "support_ends":"2015-01-01",
+      "security_ends":"2015-07-01"
+    },
+    "2.6": {
+      "support_ends":"2015-07-01",
+      "security_ends":"2016-01-01"
+    },
+    "2.7": {
+      "support_ends":"2018-05-01",
+      "security_ends":"2019-05-01"
+    },
+    "2.8": {
+      "support_ends":"2018-11-01",
+      "security_ends":"2019-11-01"
+    },
+    "3.0": {
+      "support_ends":"2016-07-01",
+      "security_ends":"2017-01-01"
+    },
+    "3.1": {
+      "support_ends":"2017-01-01",
+      "security_ends":"2017-07-01"
+    },
+    "3.2": {
+      "support_ends":"2017-07-01",
+      "security_ends":"2018-01-01"
+    },
+    "3.3": {
+      "support_ends":"2018-01-01",
+      "security_ends":"2018-07-01"
+    },
+    "3.4": {
+      "support_ends":"2020-11-01",
+      "security_ends":"2021-11-01"
+    },
+    "4.0": {
+      "support_ends":"2018-07-01",
+      "security_ends":"2019-01-01"
+    },
+    "4.1": {
+      "support_ends":"2019-01-01",
+      "security_ends":"2019-07-01"
+    },
+    "4.2": {
+      "support_ends":"2019-07-01",
+      "security_ends":"2020-01-01"
+    },
+    "4.3": {
+      "support_ends":"2020-01-01",
+      "security_ends":"2020-07-01"
+    },
+    "4.4": {
+      "support_ends":"2022-11-01",
+      "security_ends":"2023-11-01"
+    }
+  },
+  "symfony/ldap": {
+    "2.0": {
+      "support_ends":"2013-03-01",
+      "security_ends":"2013-09-01"
+    },
+    "2.1": {
+      "support_ends":"2013-05-01",
+      "security_ends":"2013-11-01"
+    },
+    "2.2": {
+      "support_ends":"2013-11-01",
+      "security_ends":"2014-05-01"
+    },
+    "2.3": {
+      "support_ends":"2016-05-01",
+      "security_ends":"2017-05-01"
+    },
+    "2.4": {
+      "support_ends":"2014-07-01",
+      "security_ends":"2015-01-01"
+    },
+    "2.5": {
+      "support_ends":"2015-01-01",
+      "security_ends":"2015-07-01"
+    },
+    "2.6": {
+      "support_ends":"2015-07-01",
+      "security_ends":"2016-01-01"
+    },
+    "2.7": {
+      "support_ends":"2018-05-01",
+      "security_ends":"2019-05-01"
+    },
+    "2.8": {
+      "support_ends":"2018-11-01",
+      "security_ends":"2019-11-01"
+    },
+    "3.0": {
+      "support_ends":"2016-07-01",
+      "security_ends":"2017-01-01"
+    },
+    "3.1": {
+      "support_ends":"2017-01-01",
+      "security_ends":"2017-07-01"
+    },
+    "3.2": {
+      "support_ends":"2017-07-01",
+      "security_ends":"2018-01-01"
+    },
+    "3.3": {
+      "support_ends":"2018-01-01",
+      "security_ends":"2018-07-01"
+    },
+    "3.4": {
+      "support_ends":"2020-11-01",
+      "security_ends":"2021-11-01"
+    },
+    "4.0": {
+      "support_ends":"2018-07-01",
+      "security_ends":"2019-01-01"
+    },
+    "4.1": {
+      "support_ends":"2019-01-01",
+      "security_ends":"2019-07-01"
+    },
+    "4.2": {
+      "support_ends":"2019-07-01",
+      "security_ends":"2020-01-01"
+    },
+    "4.3": {
+      "support_ends":"2020-01-01",
+      "security_ends":"2020-07-01"
+    },
+    "4.4": {
+      "support_ends":"2022-11-01",
+      "security_ends":"2023-11-01"
+    }
+  },
+  "symfony/lock": {
+    "2.0": {
+      "support_ends":"2013-03-01",
+      "security_ends":"2013-09-01"
+    },
+    "2.1": {
+      "support_ends":"2013-05-01",
+      "security_ends":"2013-11-01"
+    },
+    "2.2": {
+      "support_ends":"2013-11-01",
+      "security_ends":"2014-05-01"
+    },
+    "2.3": {
+      "support_ends":"2016-05-01",
+      "security_ends":"2017-05-01"
+    },
+    "2.4": {
+      "support_ends":"2014-07-01",
+      "security_ends":"2015-01-01"
+    },
+    "2.5": {
+      "support_ends":"2015-01-01",
+      "security_ends":"2015-07-01"
+    },
+    "2.6": {
+      "support_ends":"2015-07-01",
+      "security_ends":"2016-01-01"
+    },
+    "2.7": {
+      "support_ends":"2018-05-01",
+      "security_ends":"2019-05-01"
+    },
+    "2.8": {
+      "support_ends":"2018-11-01",
+      "security_ends":"2019-11-01"
+    },
+    "3.0": {
+      "support_ends":"2016-07-01",
+      "security_ends":"2017-01-01"
+    },
+    "3.1": {
+      "support_ends":"2017-01-01",
+      "security_ends":"2017-07-01"
+    },
+    "3.2": {
+      "support_ends":"2017-07-01",
+      "security_ends":"2018-01-01"
+    },
+    "3.3": {
+      "support_ends":"2018-01-01",
+      "security_ends":"2018-07-01"
+    },
+    "3.4": {
+      "support_ends":"2020-11-01",
+      "security_ends":"2021-11-01"
+    },
+    "4.0": {
+      "support_ends":"2018-07-01",
+      "security_ends":"2019-01-01"
+    },
+    "4.1": {
+      "support_ends":"2019-01-01",
+      "security_ends":"2019-07-01"
+    },
+    "4.2": {
+      "support_ends":"2019-07-01",
+      "security_ends":"2020-01-01"
+    },
+    "4.3": {
+      "support_ends":"2020-01-01",
+      "security_ends":"2020-07-01"
+    },
+    "4.4": {
+      "support_ends":"2022-11-01",
+      "security_ends":"2023-11-01"
+    }
+  },
+  "symfony/messenger": {
+    "2.0": {
+      "support_ends":"2013-03-01",
+      "security_ends":"2013-09-01"
+    },
+    "2.1": {
+      "support_ends":"2013-05-01",
+      "security_ends":"2013-11-01"
+    },
+    "2.2": {
+      "support_ends":"2013-11-01",
+      "security_ends":"2014-05-01"
+    },
+    "2.3": {
+      "support_ends":"2016-05-01",
+      "security_ends":"2017-05-01"
+    },
+    "2.4": {
+      "support_ends":"2014-07-01",
+      "security_ends":"2015-01-01"
+    },
+    "2.5": {
+      "support_ends":"2015-01-01",
+      "security_ends":"2015-07-01"
+    },
+    "2.6": {
+      "support_ends":"2015-07-01",
+      "security_ends":"2016-01-01"
+    },
+    "2.7": {
+      "support_ends":"2018-05-01",
+      "security_ends":"2019-05-01"
+    },
+    "2.8": {
+      "support_ends":"2018-11-01",
+      "security_ends":"2019-11-01"
+    },
+    "3.0": {
+      "support_ends":"2016-07-01",
+      "security_ends":"2017-01-01"
+    },
+    "3.1": {
+      "support_ends":"2017-01-01",
+      "security_ends":"2017-07-01"
+    },
+    "3.2": {
+      "support_ends":"2017-07-01",
+      "security_ends":"2018-01-01"
+    },
+    "3.3": {
+      "support_ends":"2018-01-01",
+      "security_ends":"2018-07-01"
+    },
+    "3.4": {
+      "support_ends":"2020-11-01",
+      "security_ends":"2021-11-01"
+    },
+    "4.0": {
+      "support_ends":"2018-07-01",
+      "security_ends":"2019-01-01"
+    },
+    "4.1": {
+      "support_ends":"2019-01-01",
+      "security_ends":"2019-07-01"
+    },
+    "4.2": {
+      "support_ends":"2019-07-01",
+      "security_ends":"2020-01-01"
+    },
+    "4.3": {
+      "support_ends":"2020-01-01",
+      "security_ends":"2020-07-01"
+    },
+    "4.4": {
+      "support_ends":"2022-11-01",
+      "security_ends":"2023-11-01"
+    }
+  },
+  "symfony/options-resolver": {
+    "2.0": {
+      "support_ends":"2013-03-01",
+      "security_ends":"2013-09-01"
+    },
+    "2.1": {
+      "support_ends":"2013-05-01",
+      "security_ends":"2013-11-01"
+    },
+    "2.2": {
+      "support_ends":"2013-11-01",
+      "security_ends":"2014-05-01"
+    },
+    "2.3": {
+      "support_ends":"2016-05-01",
+      "security_ends":"2017-05-01"
+    },
+    "2.4": {
+      "support_ends":"2014-07-01",
+      "security_ends":"2015-01-01"
+    },
+    "2.5": {
+      "support_ends":"2015-01-01",
+      "security_ends":"2015-07-01"
+    },
+    "2.6": {
+      "support_ends":"2015-07-01",
+      "security_ends":"2016-01-01"
+    },
+    "2.7": {
+      "support_ends":"2018-05-01",
+      "security_ends":"2019-05-01"
+    },
+    "2.8": {
+      "support_ends":"2018-11-01",
+      "security_ends":"2019-11-01"
+    },
+    "3.0": {
+      "support_ends":"2016-07-01",
+      "security_ends":"2017-01-01"
+    },
+    "3.1": {
+      "support_ends":"2017-01-01",
+      "security_ends":"2017-07-01"
+    },
+    "3.2": {
+      "support_ends":"2017-07-01",
+      "security_ends":"2018-01-01"
+    },
+    "3.3": {
+      "support_ends":"2018-01-01",
+      "security_ends":"2018-07-01"
+    },
+    "3.4": {
+      "support_ends":"2020-11-01",
+      "security_ends":"2021-11-01"
+    },
+    "4.0": {
+      "support_ends":"2018-07-01",
+      "security_ends":"2019-01-01"
+    },
+    "4.1": {
+      "support_ends":"2019-01-01",
+      "security_ends":"2019-07-01"
+    },
+    "4.2": {
+      "support_ends":"2019-07-01",
+      "security_ends":"2020-01-01"
+    },
+    "4.3": {
+      "support_ends":"2020-01-01",
+      "security_ends":"2020-07-01"
+    },
+    "4.4": {
+      "support_ends":"2022-11-01",
+      "security_ends":"2023-11-01"
+    }
+  },
+  "symfony/process": {
+    "2.0": {
+      "support_ends":"2013-03-01",
+      "security_ends":"2013-09-01"
+    },
+    "2.1": {
+      "support_ends":"2013-05-01",
+      "security_ends":"2013-11-01"
+    },
+    "2.2": {
+      "support_ends":"2013-11-01",
+      "security_ends":"2014-05-01"
+    },
+    "2.3": {
+      "support_ends":"2016-05-01",
+      "security_ends":"2017-05-01"
+    },
+    "2.4": {
+      "support_ends":"2014-07-01",
+      "security_ends":"2015-01-01"
+    },
+    "2.5": {
+      "support_ends":"2015-01-01",
+      "security_ends":"2015-07-01"
+    },
+    "2.6": {
+      "support_ends":"2015-07-01",
+      "security_ends":"2016-01-01"
+    },
+    "2.7": {
+      "support_ends":"2018-05-01",
+      "security_ends":"2019-05-01"
+    },
+    "2.8": {
+      "support_ends":"2018-11-01",
+      "security_ends":"2019-11-01"
+    },
+    "3.0": {
+      "support_ends":"2016-07-01",
+      "security_ends":"2017-01-01"
+    },
+    "3.1": {
+      "support_ends":"2017-01-01",
+      "security_ends":"2017-07-01"
+    },
+    "3.2": {
+      "support_ends":"2017-07-01",
+      "security_ends":"2018-01-01"
+    },
+    "3.3": {
+      "support_ends":"2018-01-01",
+      "security_ends":"2018-07-01"
+    },
+    "3.4": {
+      "support_ends":"2020-11-01",
+      "security_ends":"2021-11-01"
+    },
+    "4.0": {
+      "support_ends":"2018-07-01",
+      "security_ends":"2019-01-01"
+    },
+    "4.1": {
+      "support_ends":"2019-01-01",
+      "security_ends":"2019-07-01"
+    },
+    "4.2": {
+      "support_ends":"2019-07-01",
+      "security_ends":"2020-01-01"
+    },
+    "4.3": {
+      "support_ends":"2020-01-01",
+      "security_ends":"2020-07-01"
+    },
+    "4.4": {
+      "support_ends":"2022-11-01",
+      "security_ends":"2023-11-01"
+    }
+  },
+  "symfony/property-access": {
+    "2.0": {
+      "support_ends":"2013-03-01",
+      "security_ends":"2013-09-01"
+    },
+    "2.1": {
+      "support_ends":"2013-05-01",
+      "security_ends":"2013-11-01"
+    },
+    "2.2": {
+      "support_ends":"2013-11-01",
+      "security_ends":"2014-05-01"
+    },
+    "2.3": {
+      "support_ends":"2016-05-01",
+      "security_ends":"2017-05-01"
+    },
+    "2.4": {
+      "support_ends":"2014-07-01",
+      "security_ends":"2015-01-01"
+    },
+    "2.5": {
+      "support_ends":"2015-01-01",
+      "security_ends":"2015-07-01"
+    },
+    "2.6": {
+      "support_ends":"2015-07-01",
+      "security_ends":"2016-01-01"
+    },
+    "2.7": {
+      "support_ends":"2018-05-01",
+      "security_ends":"2019-05-01"
+    },
+    "2.8": {
+      "support_ends":"2018-11-01",
+      "security_ends":"2019-11-01"
+    },
+    "3.0": {
+      "support_ends":"2016-07-01",
+      "security_ends":"2017-01-01"
+    },
+    "3.1": {
+      "support_ends":"2017-01-01",
+      "security_ends":"2017-07-01"
+    },
+    "3.2": {
+      "support_ends":"2017-07-01",
+      "security_ends":"2018-01-01"
+    },
+    "3.3": {
+      "support_ends":"2018-01-01",
+      "security_ends":"2018-07-01"
+    },
+    "3.4": {
+      "support_ends":"2020-11-01",
+      "security_ends":"2021-11-01"
+    },
+    "4.0": {
+      "support_ends":"2018-07-01",
+      "security_ends":"2019-01-01"
+    },
+    "4.1": {
+      "support_ends":"2019-01-01",
+      "security_ends":"2019-07-01"
+    },
+    "4.2": {
+      "support_ends":"2019-07-01",
+      "security_ends":"2020-01-01"
+    },
+    "4.3": {
+      "support_ends":"2020-01-01",
+      "security_ends":"2020-07-01"
+    },
+    "4.4": {
+      "support_ends":"2022-11-01",
+      "security_ends":"2023-11-01"
+    }
+  },
+  "symfony/property-info": {
+    "2.0": {
+      "support_ends":"2013-03-01",
+      "security_ends":"2013-09-01"
+    },
+    "2.1": {
+      "support_ends":"2013-05-01",
+      "security_ends":"2013-11-01"
+    },
+    "2.2": {
+      "support_ends":"2013-11-01",
+      "security_ends":"2014-05-01"
+    },
+    "2.3": {
+      "support_ends":"2016-05-01",
+      "security_ends":"2017-05-01"
+    },
+    "2.4": {
+      "support_ends":"2014-07-01",
+      "security_ends":"2015-01-01"
+    },
+    "2.5": {
+      "support_ends":"2015-01-01",
+      "security_ends":"2015-07-01"
+    },
+    "2.6": {
+      "support_ends":"2015-07-01",
+      "security_ends":"2016-01-01"
+    },
+    "2.7": {
+      "support_ends":"2018-05-01",
+      "security_ends":"2019-05-01"
+    },
+    "2.8": {
+      "support_ends":"2018-11-01",
+      "security_ends":"2019-11-01"
+    },
+    "3.0": {
+      "support_ends":"2016-07-01",
+      "security_ends":"2017-01-01"
+    },
+    "3.1": {
+      "support_ends":"2017-01-01",
+      "security_ends":"2017-07-01"
+    },
+    "3.2": {
+      "support_ends":"2017-07-01",
+      "security_ends":"2018-01-01"
+    },
+    "3.3": {
+      "support_ends":"2018-01-01",
+      "security_ends":"2018-07-01"
+    },
+    "3.4": {
+      "support_ends":"2020-11-01",
+      "security_ends":"2021-11-01"
+    },
+    "4.0": {
+      "support_ends":"2018-07-01",
+      "security_ends":"2019-01-01"
+    },
+    "4.1": {
+      "support_ends":"2019-01-01",
+      "security_ends":"2019-07-01"
+    },
+    "4.2": {
+      "support_ends":"2019-07-01",
+      "security_ends":"2020-01-01"
+    },
+    "4.3": {
+      "support_ends":"2020-01-01",
+      "security_ends":"2020-07-01"
+    },
+    "4.4": {
+      "support_ends":"2022-11-01",
+      "security_ends":"2023-11-01"
+    }
+  },
+  "symfony/routing": {
+    "2.0": {
+      "support_ends":"2013-03-01",
+      "security_ends":"2013-09-01"
+    },
+    "2.1": {
+      "support_ends":"2013-05-01",
+      "security_ends":"2013-11-01"
+    },
+    "2.2": {
+      "support_ends":"2013-11-01",
+      "security_ends":"2014-05-01"
+    },
+    "2.3": {
+      "support_ends":"2016-05-01",
+      "security_ends":"2017-05-01"
+    },
+    "2.4": {
+      "support_ends":"2014-07-01",
+      "security_ends":"2015-01-01"
+    },
+    "2.5": {
+      "support_ends":"2015-01-01",
+      "security_ends":"2015-07-01"
+    },
+    "2.6": {
+      "support_ends":"2015-07-01",
+      "security_ends":"2016-01-01"
+    },
+    "2.7": {
+      "support_ends":"2018-05-01",
+      "security_ends":"2019-05-01"
+    },
+    "2.8": {
+      "support_ends":"2018-11-01",
+      "security_ends":"2019-11-01"
+    },
+    "3.0": {
+      "support_ends":"2016-07-01",
+      "security_ends":"2017-01-01"
+    },
+    "3.1": {
+      "support_ends":"2017-01-01",
+      "security_ends":"2017-07-01"
+    },
+    "3.2": {
+      "support_ends":"2017-07-01",
+      "security_ends":"2018-01-01"
+    },
+    "3.3": {
+      "support_ends":"2018-01-01",
+      "security_ends":"2018-07-01"
+    },
+    "3.4": {
+      "support_ends":"2020-11-01",
+      "security_ends":"2021-11-01"
+    },
+    "4.0": {
+      "support_ends":"2018-07-01",
+      "security_ends":"2019-01-01"
+    },
+    "4.1": {
+      "support_ends":"2019-01-01",
+      "security_ends":"2019-07-01"
+    },
+    "4.2": {
+      "support_ends":"2019-07-01",
+      "security_ends":"2020-01-01"
+    },
+    "4.3": {
+      "support_ends":"2020-01-01",
+      "security_ends":"2020-07-01"
+    },
+    "4.4": {
+      "support_ends":"2022-11-01",
+      "security_ends":"2023-11-01"
+    }
+  },
+  "symfony/security": {
+    "2.0": {
+      "support_ends":"2013-03-01",
+      "security_ends":"2013-09-01"
+    },
+    "2.1": {
+      "support_ends":"2013-05-01",
+      "security_ends":"2013-11-01"
+    },
+    "2.2": {
+      "support_ends":"2013-11-01",
+      "security_ends":"2014-05-01"
+    },
+    "2.3": {
+      "support_ends":"2016-05-01",
+      "security_ends":"2017-05-01"
+    },
+    "2.4": {
+      "support_ends":"2014-07-01",
+      "security_ends":"2015-01-01"
+    },
+    "2.5": {
+      "support_ends":"2015-01-01",
+      "security_ends":"2015-07-01"
+    },
+    "2.6": {
+      "support_ends":"2015-07-01",
+      "security_ends":"2016-01-01"
+    },
+    "2.7": {
+      "support_ends":"2018-05-01",
+      "security_ends":"2019-05-01"
+    },
+    "2.8": {
+      "support_ends":"2018-11-01",
+      "security_ends":"2019-11-01"
+    },
+    "3.0": {
+      "support_ends":"2016-07-01",
+      "security_ends":"2017-01-01"
+    },
+    "3.1": {
+      "support_ends":"2017-01-01",
+      "security_ends":"2017-07-01"
+    },
+    "3.2": {
+      "support_ends":"2017-07-01",
+      "security_ends":"2018-01-01"
+    },
+    "3.3": {
+      "support_ends":"2018-01-01",
+      "security_ends":"2018-07-01"
+    },
+    "3.4": {
+      "support_ends":"2020-11-01",
+      "security_ends":"2021-11-01"
+    },
+    "4.0": {
+      "support_ends":"2018-07-01",
+      "security_ends":"2019-01-01"
+    },
+    "4.1": {
+      "support_ends":"2019-01-01",
+      "security_ends":"2019-07-01"
+    },
+    "4.2": {
+      "support_ends":"2019-07-01",
+      "security_ends":"2020-01-01"
+    },
+    "4.3": {
+      "support_ends":"2020-01-01",
+      "security_ends":"2020-07-01"
+    },
+    "4.4": {
+      "support_ends":"2022-11-01",
+      "security_ends":"2023-11-01"
+    }
+  },
+  "symfony/serializer": {
+    "2.0": {
+      "support_ends":"2013-03-01",
+      "security_ends":"2013-09-01"
+    },
+    "2.1": {
+      "support_ends":"2013-05-01",
+      "security_ends":"2013-11-01"
+    },
+    "2.2": {
+      "support_ends":"2013-11-01",
+      "security_ends":"2014-05-01"
+    },
+    "2.3": {
+      "support_ends":"2016-05-01",
+      "security_ends":"2017-05-01"
+    },
+    "2.4": {
+      "support_ends":"2014-07-01",
+      "security_ends":"2015-01-01"
+    },
+    "2.5": {
+      "support_ends":"2015-01-01",
+      "security_ends":"2015-07-01"
+    },
+    "2.6": {
+      "support_ends":"2015-07-01",
+      "security_ends":"2016-01-01"
+    },
+    "2.7": {
+      "support_ends":"2018-05-01",
+      "security_ends":"2019-05-01"
+    },
+    "2.8": {
+      "support_ends":"2018-11-01",
+      "security_ends":"2019-11-01"
+    },
+    "3.0": {
+      "support_ends":"2016-07-01",
+      "security_ends":"2017-01-01"
+    },
+    "3.1": {
+      "support_ends":"2017-01-01",
+      "security_ends":"2017-07-01"
+    },
+    "3.2": {
+      "support_ends":"2017-07-01",
+      "security_ends":"2018-01-01"
+    },
+    "3.3": {
+      "support_ends":"2018-01-01",
+      "security_ends":"2018-07-01"
+    },
+    "3.4": {
+      "support_ends":"2020-11-01",
+      "security_ends":"2021-11-01"
+    },
+    "4.0": {
+      "support_ends":"2018-07-01",
+      "security_ends":"2019-01-01"
+    },
+    "4.1": {
+      "support_ends":"2019-01-01",
+      "security_ends":"2019-07-01"
+    },
+    "4.2": {
+      "support_ends":"2019-07-01",
+      "security_ends":"2020-01-01"
+    },
+    "4.3": {
+      "support_ends":"2020-01-01",
+      "security_ends":"2020-07-01"
+    },
+    "4.4": {
+      "support_ends":"2022-11-01",
+      "security_ends":"2023-11-01"
+    }
+  },
+  "symfony/stopwatch": {
+    "2.0": {
+      "support_ends":"2013-03-01",
+      "security_ends":"2013-09-01"
+    },
+    "2.1": {
+      "support_ends":"2013-05-01",
+      "security_ends":"2013-11-01"
+    },
+    "2.2": {
+      "support_ends":"2013-11-01",
+      "security_ends":"2014-05-01"
+    },
+    "2.3": {
+      "support_ends":"2016-05-01",
+      "security_ends":"2017-05-01"
+    },
+    "2.4": {
+      "support_ends":"2014-07-01",
+      "security_ends":"2015-01-01"
+    },
+    "2.5": {
+      "support_ends":"2015-01-01",
+      "security_ends":"2015-07-01"
+    },
+    "2.6": {
+      "support_ends":"2015-07-01",
+      "security_ends":"2016-01-01"
+    },
+    "2.7": {
+      "support_ends":"2018-05-01",
+      "security_ends":"2019-05-01"
+    },
+    "2.8": {
+      "support_ends":"2018-11-01",
+      "security_ends":"2019-11-01"
+    },
+    "3.0": {
+      "support_ends":"2016-07-01",
+      "security_ends":"2017-01-01"
+    },
+    "3.1": {
+      "support_ends":"2017-01-01",
+      "security_ends":"2017-07-01"
+    },
+    "3.2": {
+      "support_ends":"2017-07-01",
+      "security_ends":"2018-01-01"
+    },
+    "3.3": {
+      "support_ends":"2018-01-01",
+      "security_ends":"2018-07-01"
+    },
+    "3.4": {
+      "support_ends":"2020-11-01",
+      "security_ends":"2021-11-01"
+    },
+    "4.0": {
+      "support_ends":"2018-07-01",
+      "security_ends":"2019-01-01"
+    },
+    "4.1": {
+      "support_ends":"2019-01-01",
+      "security_ends":"2019-07-01"
+    },
+    "4.2": {
+      "support_ends":"2019-07-01",
+      "security_ends":"2020-01-01"
+    },
+    "4.3": {
+      "support_ends":"2020-01-01",
+      "security_ends":"2020-07-01"
+    },
+    "4.4": {
+      "support_ends":"2022-11-01",
+      "security_ends":"2023-11-01"
+    }
+  },
+  "symfony/templating": {
+    "2.0": {
+      "support_ends":"2013-03-01",
+      "security_ends":"2013-09-01"
+    },
+    "2.1": {
+      "support_ends":"2013-05-01",
+      "security_ends":"2013-11-01"
+    },
+    "2.2": {
+      "support_ends":"2013-11-01",
+      "security_ends":"2014-05-01"
+    },
+    "2.3": {
+      "support_ends":"2016-05-01",
+      "security_ends":"2017-05-01"
+    },
+    "2.4": {
+      "support_ends":"2014-07-01",
+      "security_ends":"2015-01-01"
+    },
+    "2.5": {
+      "support_ends":"2015-01-01",
+      "security_ends":"2015-07-01"
+    },
+    "2.6": {
+      "support_ends":"2015-07-01",
+      "security_ends":"2016-01-01"
+    },
+    "2.7": {
+      "support_ends":"2018-05-01",
+      "security_ends":"2019-05-01"
+    },
+    "2.8": {
+      "support_ends":"2018-11-01",
+      "security_ends":"2019-11-01"
+    },
+    "3.0": {
+      "support_ends":"2016-07-01",
+      "security_ends":"2017-01-01"
+    },
+    "3.1": {
+      "support_ends":"2017-01-01",
+      "security_ends":"2017-07-01"
+    },
+    "3.2": {
+      "support_ends":"2017-07-01",
+      "security_ends":"2018-01-01"
+    },
+    "3.3": {
+      "support_ends":"2018-01-01",
+      "security_ends":"2018-07-01"
+    },
+    "3.4": {
+      "support_ends":"2020-11-01",
+      "security_ends":"2021-11-01"
+    },
+    "4.0": {
+      "support_ends":"2018-07-01",
+      "security_ends":"2019-01-01"
+    },
+    "4.1": {
+      "support_ends":"2019-01-01",
+      "security_ends":"2019-07-01"
+    },
+    "4.2": {
+      "support_ends":"2019-07-01",
+      "security_ends":"2020-01-01"
+    },
+    "4.3": {
+      "support_ends":"2020-01-01",
+      "security_ends":"2020-07-01"
+    },
+    "4.4": {
+      "support_ends":"2022-11-01",
+      "security_ends":"2023-11-01"
+    }
+  },
+  "symfony/translation": {
+    "2.0": {
+      "support_ends":"2013-03-01",
+      "security_ends":"2013-09-01"
+    },
+    "2.1": {
+      "support_ends":"2013-05-01",
+      "security_ends":"2013-11-01"
+    },
+    "2.2": {
+      "support_ends":"2013-11-01",
+      "security_ends":"2014-05-01"
+    },
+    "2.3": {
+      "support_ends":"2016-05-01",
+      "security_ends":"2017-05-01"
+    },
+    "2.4": {
+      "support_ends":"2014-07-01",
+      "security_ends":"2015-01-01"
+    },
+    "2.5": {
+      "support_ends":"2015-01-01",
+      "security_ends":"2015-07-01"
+    },
+    "2.6": {
+      "support_ends":"2015-07-01",
+      "security_ends":"2016-01-01"
+    },
+    "2.7": {
+      "support_ends":"2018-05-01",
+      "security_ends":"2019-05-01"
+    },
+    "2.8": {
+      "support_ends":"2018-11-01",
+      "security_ends":"2019-11-01"
+    },
+    "3.0": {
+      "support_ends":"2016-07-01",
+      "security_ends":"2017-01-01"
+    },
+    "3.1": {
+      "support_ends":"2017-01-01",
+      "security_ends":"2017-07-01"
+    },
+    "3.2": {
+      "support_ends":"2017-07-01",
+      "security_ends":"2018-01-01"
+    },
+    "3.3": {
+      "support_ends":"2018-01-01",
+      "security_ends":"2018-07-01"
+    },
+    "3.4": {
+      "support_ends":"2020-11-01",
+      "security_ends":"2021-11-01"
+    },
+    "4.0": {
+      "support_ends":"2018-07-01",
+      "security_ends":"2019-01-01"
+    },
+    "4.1": {
+      "support_ends":"2019-01-01",
+      "security_ends":"2019-07-01"
+    },
+    "4.2": {
+      "support_ends":"2019-07-01",
+      "security_ends":"2020-01-01"
+    },
+    "4.3": {
+      "support_ends":"2020-01-01",
+      "security_ends":"2020-07-01"
+    },
+    "4.4": {
+      "support_ends":"2022-11-01",
+      "security_ends":"2023-11-01"
+    }
+  },
+  "symfony/validator": {
+    "2.0": {
+      "support_ends":"2013-03-01",
+      "security_ends":"2013-09-01"
+    },
+    "2.1": {
+      "support_ends":"2013-05-01",
+      "security_ends":"2013-11-01"
+    },
+    "2.2": {
+      "support_ends":"2013-11-01",
+      "security_ends":"2014-05-01"
+    },
+    "2.3": {
+      "support_ends":"2016-05-01",
+      "security_ends":"2017-05-01"
+    },
+    "2.4": {
+      "support_ends":"2014-07-01",
+      "security_ends":"2015-01-01"
+    },
+    "2.5": {
+      "support_ends":"2015-01-01",
+      "security_ends":"2015-07-01"
+    },
+    "2.6": {
+      "support_ends":"2015-07-01",
+      "security_ends":"2016-01-01"
+    },
+    "2.7": {
+      "support_ends":"2018-05-01",
+      "security_ends":"2019-05-01"
+    },
+    "2.8": {
+      "support_ends":"2018-11-01",
+      "security_ends":"2019-11-01"
+    },
+    "3.0": {
+      "support_ends":"2016-07-01",
+      "security_ends":"2017-01-01"
+    },
+    "3.1": {
+      "support_ends":"2017-01-01",
+      "security_ends":"2017-07-01"
+    },
+    "3.2": {
+      "support_ends":"2017-07-01",
+      "security_ends":"2018-01-01"
+    },
+    "3.3": {
+      "support_ends":"2018-01-01",
+      "security_ends":"2018-07-01"
+    },
+    "3.4": {
+      "support_ends":"2020-11-01",
+      "security_ends":"2021-11-01"
+    },
+    "4.0": {
+      "support_ends":"2018-07-01",
+      "security_ends":"2019-01-01"
+    },
+    "4.1": {
+      "support_ends":"2019-01-01",
+      "security_ends":"2019-07-01"
+    },
+    "4.2": {
+      "support_ends":"2019-07-01",
+      "security_ends":"2020-01-01"
+    },
+    "4.3": {
+      "support_ends":"2020-01-01",
+      "security_ends":"2020-07-01"
+    },
+    "4.4": {
+      "support_ends":"2022-11-01",
+      "security_ends":"2023-11-01"
+    }
+  },
+  "symfony/var-dumper": {
+    "2.0": {
+      "support_ends":"2013-03-01",
+      "security_ends":"2013-09-01"
+    },
+    "2.1": {
+      "support_ends":"2013-05-01",
+      "security_ends":"2013-11-01"
+    },
+    "2.2": {
+      "support_ends":"2013-11-01",
+      "security_ends":"2014-05-01"
+    },
+    "2.3": {
+      "support_ends":"2016-05-01",
+      "security_ends":"2017-05-01"
+    },
+    "2.4": {
+      "support_ends":"2014-07-01",
+      "security_ends":"2015-01-01"
+    },
+    "2.5": {
+      "support_ends":"2015-01-01",
+      "security_ends":"2015-07-01"
+    },
+    "2.6": {
+      "support_ends":"2015-07-01",
+      "security_ends":"2016-01-01"
+    },
+    "2.7": {
+      "support_ends":"2018-05-01",
+      "security_ends":"2019-05-01"
+    },
+    "2.8": {
+      "support_ends":"2018-11-01",
+      "security_ends":"2019-11-01"
+    },
+    "3.0": {
+      "support_ends":"2016-07-01",
+      "security_ends":"2017-01-01"
+    },
+    "3.1": {
+      "support_ends":"2017-01-01",
+      "security_ends":"2017-07-01"
+    },
+    "3.2": {
+      "support_ends":"2017-07-01",
+      "security_ends":"2018-01-01"
+    },
+    "3.3": {
+      "support_ends":"2018-01-01",
+      "security_ends":"2018-07-01"
+    },
+    "3.4": {
+      "support_ends":"2020-11-01",
+      "security_ends":"2021-11-01"
+    },
+    "4.0": {
+      "support_ends":"2018-07-01",
+      "security_ends":"2019-01-01"
+    },
+    "4.1": {
+      "support_ends":"2019-01-01",
+      "security_ends":"2019-07-01"
+    },
+    "4.2": {
+      "support_ends":"2019-07-01",
+      "security_ends":"2020-01-01"
+    },
+    "4.3": {
+      "support_ends":"2020-01-01",
+      "security_ends":"2020-07-01"
+    },
+    "4.4": {
+      "support_ends":"2022-11-01",
+      "security_ends":"2023-11-01"
+    }
+  },
+  "symfony/var-exporter": {
+    "2.0": {
+      "support_ends":"2013-03-01",
+      "security_ends":"2013-09-01"
+    },
+    "2.1": {
+      "support_ends":"2013-05-01",
+      "security_ends":"2013-11-01"
+    },
+    "2.2": {
+      "support_ends":"2013-11-01",
+      "security_ends":"2014-05-01"
+    },
+    "2.3": {
+      "support_ends":"2016-05-01",
+      "security_ends":"2017-05-01"
+    },
+    "2.4": {
+      "support_ends":"2014-07-01",
+      "security_ends":"2015-01-01"
+    },
+    "2.5": {
+      "support_ends":"2015-01-01",
+      "security_ends":"2015-07-01"
+    },
+    "2.6": {
+      "support_ends":"2015-07-01",
+      "security_ends":"2016-01-01"
+    },
+    "2.7": {
+      "support_ends":"2018-05-01",
+      "security_ends":"2019-05-01"
+    },
+    "2.8": {
+      "support_ends":"2018-11-01",
+      "security_ends":"2019-11-01"
+    },
+    "3.0": {
+      "support_ends":"2016-07-01",
+      "security_ends":"2017-01-01"
+    },
+    "3.1": {
+      "support_ends":"2017-01-01",
+      "security_ends":"2017-07-01"
+    },
+    "3.2": {
+      "support_ends":"2017-07-01",
+      "security_ends":"2018-01-01"
+    },
+    "3.3": {
+      "support_ends":"2018-01-01",
+      "security_ends":"2018-07-01"
+    },
+    "3.4": {
+      "support_ends":"2020-11-01",
+      "security_ends":"2021-11-01"
+    },
+    "4.0": {
+      "support_ends":"2018-07-01",
+      "security_ends":"2019-01-01"
+    },
+    "4.1": {
+      "support_ends":"2019-01-01",
+      "security_ends":"2019-07-01"
+    },
+    "4.2": {
+      "support_ends":"2019-07-01",
+      "security_ends":"2020-01-01"
+    },
+    "4.3": {
+      "support_ends":"2020-01-01",
+      "security_ends":"2020-07-01"
+    },
+    "4.4": {
+      "support_ends":"2022-11-01",
+      "security_ends":"2023-11-01"
+    }
+  },
+  "symfony/web-link": {
+    "2.0": {
+      "support_ends":"2013-03-01",
+      "security_ends":"2013-09-01"
+    },
+    "2.1": {
+      "support_ends":"2013-05-01",
+      "security_ends":"2013-11-01"
+    },
+    "2.2": {
+      "support_ends":"2013-11-01",
+      "security_ends":"2014-05-01"
+    },
+    "2.3": {
+      "support_ends":"2016-05-01",
+      "security_ends":"2017-05-01"
+    },
+    "2.4": {
+      "support_ends":"2014-07-01",
+      "security_ends":"2015-01-01"
+    },
+    "2.5": {
+      "support_ends":"2015-01-01",
+      "security_ends":"2015-07-01"
+    },
+    "2.6": {
+      "support_ends":"2015-07-01",
+      "security_ends":"2016-01-01"
+    },
+    "2.7": {
+      "support_ends":"2018-05-01",
+      "security_ends":"2019-05-01"
+    },
+    "2.8": {
+      "support_ends":"2018-11-01",
+      "security_ends":"2019-11-01"
+    },
+    "3.0": {
+      "support_ends":"2016-07-01",
+      "security_ends":"2017-01-01"
+    },
+    "3.1": {
+      "support_ends":"2017-01-01",
+      "security_ends":"2017-07-01"
+    },
+    "3.2": {
+      "support_ends":"2017-07-01",
+      "security_ends":"2018-01-01"
+    },
+    "3.3": {
+      "support_ends":"2018-01-01",
+      "security_ends":"2018-07-01"
+    },
+    "3.4": {
+      "support_ends":"2020-11-01",
+      "security_ends":"2021-11-01"
+    },
+    "4.0": {
+      "support_ends":"2018-07-01",
+      "security_ends":"2019-01-01"
+    },
+    "4.1": {
+      "support_ends":"2019-01-01",
+      "security_ends":"2019-07-01"
+    },
+    "4.2": {
+      "support_ends":"2019-07-01",
+      "security_ends":"2020-01-01"
+    },
+    "4.3": {
+      "support_ends":"2020-01-01",
+      "security_ends":"2020-07-01"
+    },
+    "4.4": {
+      "support_ends":"2022-11-01",
+      "security_ends":"2023-11-01"
+    }
+  },
+  "symfony/workflow": {
+    "2.0": {
+      "support_ends":"2013-03-01",
+      "security_ends":"2013-09-01"
+    },
+    "2.1": {
+      "support_ends":"2013-05-01",
+      "security_ends":"2013-11-01"
+    },
+    "2.2": {
+      "support_ends":"2013-11-01",
+      "security_ends":"2014-05-01"
+    },
+    "2.3": {
+      "support_ends":"2016-05-01",
+      "security_ends":"2017-05-01"
+    },
+    "2.4": {
+      "support_ends":"2014-07-01",
+      "security_ends":"2015-01-01"
+    },
+    "2.5": {
+      "support_ends":"2015-01-01",
+      "security_ends":"2015-07-01"
+    },
+    "2.6": {
+      "support_ends":"2015-07-01",
+      "security_ends":"2016-01-01"
+    },
+    "2.7": {
+      "support_ends":"2018-05-01",
+      "security_ends":"2019-05-01"
+    },
+    "2.8": {
+      "support_ends":"2018-11-01",
+      "security_ends":"2019-11-01"
+    },
+    "3.0": {
+      "support_ends":"2016-07-01",
+      "security_ends":"2017-01-01"
+    },
+    "3.1": {
+      "support_ends":"2017-01-01",
+      "security_ends":"2017-07-01"
+    },
+    "3.2": {
+      "support_ends":"2017-07-01",
+      "security_ends":"2018-01-01"
+    },
+    "3.3": {
+      "support_ends":"2018-01-01",
+      "security_ends":"2018-07-01"
+    },
+    "3.4": {
+      "support_ends":"2020-11-01",
+      "security_ends":"2021-11-01"
+    },
+    "4.0": {
+      "support_ends":"2018-07-01",
+      "security_ends":"2019-01-01"
+    },
+    "4.1": {
+      "support_ends":"2019-01-01",
+      "security_ends":"2019-07-01"
+    },
+    "4.2": {
+      "support_ends":"2019-07-01",
+      "security_ends":"2020-01-01"
+    },
+    "4.3": {
+      "support_ends":"2020-01-01",
+      "security_ends":"2020-07-01"
+    },
+    "4.4": {
+      "support_ends":"2022-11-01",
+      "security_ends":"2023-11-01"
+    }
+  },
+  "symfony/yaml": {
+    "2.0": {
+      "support_ends":"2013-03-01",
+      "security_ends":"2013-09-01"
+    },
+    "2.1": {
+      "support_ends":"2013-05-01",
+      "security_ends":"2013-11-01"
+    },
+    "2.2": {
+      "support_ends":"2013-11-01",
+      "security_ends":"2014-05-01"
+    },
+    "2.3": {
+      "support_ends":"2016-05-01",
+      "security_ends":"2017-05-01"
+    },
+    "2.4": {
+      "support_ends":"2014-07-01",
+      "security_ends":"2015-01-01"
+    },
+    "2.5": {
+      "support_ends":"2015-01-01",
+      "security_ends":"2015-07-01"
+    },
+    "2.6": {
+      "support_ends":"2015-07-01",
+      "security_ends":"2016-01-01"
+    },
+    "2.7": {
+      "support_ends":"2018-05-01",
+      "security_ends":"2019-05-01"
+    },
+    "2.8": {
+      "support_ends":"2018-11-01",
+      "security_ends":"2019-11-01"
+    },
+    "3.0": {
+      "support_ends":"2016-07-01",
+      "security_ends":"2017-01-01"
+    },
+    "3.1": {
+      "support_ends":"2017-01-01",
+      "security_ends":"2017-07-01"
+    },
+    "3.2": {
+      "support_ends":"2017-07-01",
+      "security_ends":"2018-01-01"
+    },
+    "3.3": {
+      "support_ends":"2018-01-01",
+      "security_ends":"2018-07-01"
+    },
+    "3.4": {
+      "support_ends":"2020-11-01",
+      "security_ends":"2021-11-01"
+    },
+    "4.0": {
+      "support_ends":"2018-07-01",
+      "security_ends":"2019-01-01"
+    },
+    "4.1": {
+      "support_ends":"2019-01-01",
+      "security_ends":"2019-07-01"
+    },
+    "4.2": {
+      "support_ends":"2019-07-01",
+      "security_ends":"2020-01-01"
+    },
+    "4.3": {
+      "support_ends":"2020-01-01",
+      "security_ends":"2020-07-01"
+    },
+    "4.4": {
+      "support_ends":"2022-11-01",
+      "security_ends":"2023-11-01"
+    }
+  },
+  "silverstripe/framework": {
+    "3.4": {
+      "support_ends":"2016-12-31",
+      "security_ends":"2016-12-31"
+    },
+    "3.5": {
+      "support_ends":"2018-12-31",
+      "security_ends":"2018-12-31"
+    },
+    "3.6": {
+      "support_ends":"2017-12-31",
+      "security_ends":"2019-12-31"
+    },
+    "3.7": {
+      "support_ends":"2018-05-31",
+      "security_ends":"2020-09-31"
+    },
+    "4.0": {
+      "support_ends":"2018-12-31",
+      "security_ends":"2019-03-31"
+    },
+    "4.1": {
+      "support_ends":"2018-12-31",
+      "security_ends":"2019-03-31"
+    }
+  },
+  "phpunit/phpunit": {
+    "4.0": {
+      "support_ends":"2017-02-03",
+      "security_ends":"2017-02-03"
+    },
+    "4.1": {
+      "support_ends":"2017-02-03",
+      "security_ends":"2017-02-03"
+    },
+    "4.2": {
+      "support_ends":"2017-02-03",
+      "security_ends":"2017-02-03"
+    },
+    "4.3": {
+      "support_ends":"2017-02-03",
+      "security_ends":"2017-02-03"
+    },
+    "4.4": {
+      "support_ends":"2017-02-03",
+      "security_ends":"2017-02-03"
+    },
+    "4.5": {
+      "support_ends":"2017-02-03",
+      "security_ends":"2017-02-03"
+    },
+    "4.6": {
+      "support_ends":"2017-02-03",
+      "security_ends":"2017-02-03"
+    },
+    "4.7": {
+      "support_ends":"2017-02-03",
+      "security_ends":"2017-02-03"
+    },
+    "4.8": {
+      "support_ends":"2017-02-03",
+      "security_ends":"2017-02-03"
+    },
+    "5.0": {
+      "support_ends":"2018-02-02",
+      "security_ends":"2018-02-02"
+    },
+    "5.1": {
+      "support_ends":"2018-02-02",
+      "security_ends":"2018-02-02"
+    },
+    "5.2": {
+      "support_ends":"2018-02-02",
+      "security_ends":"2018-02-02"
+    },
+    "5.3": {
+      "support_ends":"2018-02-02",
+      "security_ends":"2018-02-02"
+    },
+    "5.4": {
+      "support_ends":"2018-02-02",
+      "security_ends":"2018-02-02"
+    },
+    "5.5": {
+      "support_ends":"2018-02-02",
+      "security_ends":"2018-02-02"
+    },
+    "5.6": {
+      "support_ends":"2018-02-02",
+      "security_ends":"2018-02-02"
+    },
+    "5.7": {
+      "support_ends":"2018-02-02",
+      "security_ends":"2018-02-02"
+    },
+    "6.0": {
+      "support_ends":"2019-02-01",
+      "security_ends":"2019-02-01"
+    },
+    "6.1": {
+      "support_ends":"2019-02-01",
+      "security_ends":"2019-02-01"
+    },
+    "6.2": {
+      "support_ends":"2019-02-01",
+      "security_ends":"2019-02-01"
+    },
+    "6.3": {
+      "support_ends":"2019-02-01",
+      "security_ends":"2019-02-01"
+    },
+    "6.4": {
+      "support_ends":"2019-02-01",
+      "security_ends":"2019-02-01"
+    },
+    "6.5": {
+      "support_ends":"2019-02-01",
+      "security_ends":"2019-02-01"
+    },
+    "7.0": {
+      "support_ends":"2020-02-07",
+      "security_ends":"2020-02-07"
+    },
+    "7.1": {
+      "support_ends":"2020-02-07",
+      "security_ends":"2020-02-07"
+    },
+    "7.2": {
+      "support_ends":"2020-02-07",
+      "security_ends":"2020-02-07"
+    },
+    "7.3": {
+      "support_ends":"2020-02-07",
+      "security_ends":"2020-02-07"
+    },
+    "7.4": {
+      "support_ends":"2020-02-07",
+      "security_ends":"2020-02-07"
+    }
+  },
+  "silex/silex": {
+    "abandoned": true
   }
 }

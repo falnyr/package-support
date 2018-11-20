@@ -5,8 +5,11 @@
     "Herrera\\Box\\Compactor\\Php"
   ],
   "extract": false,
+  "main": "package-support",
   "files": [
-    "LICENSE"
+    "LICENSE",
+    "package-support",
+    "packages.json"
   ],
   "finder": [
     {
@@ -16,6 +19,6 @@
     }
   ],
   "git-commit": "git-commit",
-  "stub": "package-support",
+  "stub": true,
   "web": false
 }
